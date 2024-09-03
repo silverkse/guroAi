@@ -1,0 +1,2 @@
+# guroAi
+guro himedia
