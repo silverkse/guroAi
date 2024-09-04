@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div 요소 사용하기</title>
+    <style>
+        div#wrap {
+            width: 600px;
+            padding: 10px;
+            border: 3px solid #08f;
+            /* m0-a */
+            margin: 0 auto;
+        }
+
+        header#header {
+            border: 3px solid #f80;
+            margin: 5px;
+        }
+
+        main#pets {
+            border: 3px solid #aaa;
+            margin: 5px;
+
+            display: flex;
+        }
+
+        article#cats {
+            border: 3px solid #ff0;
+            margin: 5px;
+        }
+
+        article#dogs {
+            border: 3px solid #ff0;
+            margin: 5px;
+        }
+
+        aside#etc {
+            border: 3px solid #3a3;
+            margin: 5px;
+        }
+
+        footer#footer {
+            border: 3px solid #a53;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 기본적인 전체 레이아웃을 위한 Div -->
+
+        <header id="header" class="header">
+            <h1>
+                Welcome to PetStory.com
+            </h1>
+        </header> <!-- 닫는 태그, 종료 태그 -->
+        <!-- header#header 머릿글 영역-->
+
+        <main id="pets" class="pets">
+            <article id="cats">
+                <h2>Cats</h2>
+                <p>
+                    Cats just like to sleep all day.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint, perferendis quaerat nobis possimus eligendi voluptatibus
+                    aliquid quod explicabo molestias itaque, molestiae id?
+                    Unde placeat odit at quos sapiente debitis ullam.
+                </p>
+            </article>
+            <!-- article#cats -->
+
+            <article id="dogs">
+                <h2>Dogs</h2>
+                <p>
+                    Dogs are usually awake more than eats.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint, perferendis quaerat nobis possimus eligendi voluptatibus
+                    aliquid quod explicabo molestias itaque, molestiae id?
+                    Unde placeat odit at quos sapiente debitis ullam.
+                </p>
+            </article>
+            <!-- article#dogs, article 게시글(제목, 본문 내용+추가기타내용 등등) -->
+        </main>
+        <!-- main#main 본문 영역 -->
+
+        <aside id="etc">
+            <p>
+                PetStorz.com can serve all your pet needs.
+            </p>
+        </aside>
+        <!-- aside#etc 기타 영역-->
+
+        <footer id="footer">
+            <p>
+                &copy;2005. PetStorz.com <br>
+                All trademarks and registered trademarks <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sint, perferendis quaerat nobis possimus eligendi voluptatibus
+            </p>
+        </footer>
+        <!-- footer#footer 바닥글 영역-->
+    </div>
+    <!-- div#wrap -->
+</body>
+
+</html>

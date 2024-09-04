@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍보 포스터</title>
+    <style>
+        div#wrap {
+            width: 640px;
+            padding: 13px;
+            border: 3px solid #999;
+        }
+
+        table#salesInfo {
+            width: 100%;
+            border: 2px solid #bbb;
+            border-top: 1px solid #000;
+            /* border-top: none; */
+            border-collapse: collapse;
+        }
+
+        table#salesInfo>caption {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+            padding: 8px;
+            background-color: #000;
+        }
+
+        table#salesInfo td {
+            border: 2px solid #ddd;
+        }
+
+        h5 {
+            color: #ad1717;
+            text-align: center;
+        }
+
+        table p {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        table span {
+            color: #33a;
+        }
+
+        table p#bTime {
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="headerImg">
+            <img src="images/apple.jpg" alt="홍보">
+        </header>
+
+        <!-- table#salesInfo>caption+tbody>tr*3>td -->
+        <table id="salesInfo">
+            <caption>확인하세요</caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <h5>주문 및 배송</h5>
+                        <p>
+                            <span>오후 2시 이전</span> 주문건은 당일 발송합니다.
+                        </p>
+                        <p>
+                            2시 이후 주문건은 다음날 발송합니다(주말 제외)
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>교환 및 환불</h5>
+                        <p>불만족시 <span>100% 환불</span> 해 드립니다</p>
+                        <p>고객센터로 전화주세요</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>고객센터</h5>
+                        <p>0000-0000</p>
+                        <p id="bTime"><!-- business Time-->상담시간 : 오전 9시 ~ 오후 6시(토/일, 공휴일 휴무)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- div#wrap -->
+</body>
+
+</html>

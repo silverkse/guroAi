@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식 요소</title>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <h1>원격 form요소</h1>
+        <!-- <form action="데이터수신파일 또는 URI" method="get/post"></form> -->
+
+        1줄 입력<input type="text" name="data01" form="frm_01">
+        <br><br>
+        파일 전송(=파일 업로드)
+        <input type="file" name="upFile" form="frm_01">
+        <br>
+        <br>
+        <button type="submit" form="frm_01">전송버튼</button>
+
+        <form action="https://www.daum.net" method="post" enctype="multipart/form-data" id="frm_01"></form>
+
+
+    </div>
+    <!-- div#wrap -->
+</body>
+
+</html>
