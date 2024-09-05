@@ -5,25 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>입력양식 요소</title>
+    <style>
+        div#wrap {
+            width: 500px;
+            padding: 10px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+
+        input[type=radio] {
+            width: 20px;
+            height: 20px;
+        }
+
+        input[type=checkbox] {
+            width: 20px;
+            height: 20px;
+        }
+
+        fieldset#checkBoxField {
+            width: 300px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        fieldset#btnField {
+            width: 360px;
+            text-align: center;
+            border: none;
+            margin: 20px 0;
+        }
+
+        label {
+            user-select: none;
+        }
+    </style>
 </head>
 
 <body>
     <div id="wrap">
 
-        <h1>원격 form요소</h1>
-        <!-- <form action="데이터수신파일 또는 URI" method="get/post"></form> -->
+        <h1><label for="txtBox">Form 하위요소</label></h1>
 
-        1줄 입력<input type="text" name="data01" form="frm_01">
-        <br><br>
-        파일 전송(=파일 업로드)
-        <input type="file" name="upFile" form="frm_01">
-        <br>
-        <br>
-        <button type="submit" form="frm_01">전송버튼</button>
-
-        <form action="https://www.daum.net" method="post" enctype="multipart/form-data" id="frm_01"></form>
+        <hr>
 
 
+        <form action="receive.html" enctype="multipart/form-data">
+
+            제목 <input type="text" id="txtBox">
+
+            <fieldset id="checkBoxField">
+                <legend>취미</legend>
+                <label>
+                    요리 <input type="checkbox" name="hobby" value="요리">
+                </label>
+                <label>
+                    음악 <input type="checkbox" name="hobby" value="음악">
+                </label>
+                여행 <input type="checkbox" name="hobby" value="여행">
+            </fieldset>
+
+            <textarea rows="5" cols="50"></textarea>
+
+            <fieldset id="btnField">
+                <button type="submit">실행</button>
+                <button type="reset">초기화</button>
+            </fieldset>
+        </form>
     </div>
     <!-- div#wrap -->
 </body>

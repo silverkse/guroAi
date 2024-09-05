@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지원서</title>
+    <style>
+        div#wrap {
+            width: 560px;
+            padding: 0 24px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+
+        div.part {
+            /* border: 1px solid #000; */
+            margin-bottom: 30px;
+        }
+
+        label {
+            margin-left: 40px;
+            margin-bottom: 7px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p>
+            HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.
+        </p>
+        <hr>
+
+        <div class="part">
+            <h3>개인정보</h3>
+            <label>
+                <span>이름</span>
+                <input type="text" placeholder="공백없이 입력하세요">
+            </label>
+            <label>
+                <span>연락처</span>
+                <input type="text" name="">
+            </label>
+        </div>
+
+        <div class="part">
+            <h3>지원 분야</h3>
+            <label>
+                <input type="radio" name="radio">
+                <span>웹 퍼블리싱</span>
+            </label>
+            <label>
+                <input type="radio" name="radio">
+                <span>웹 애플리케이션 개발</span>
+            </label>
+            <label>
+                <input type="radio" name="radio">
+                <span>개발 환경 개선</span>
+            </label>
+        </div>
+
+        <div class="part" style="margin: 0;">
+            <h3>지원 동기</h3>
+            <textarea cols="60" rows="4" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+        </div>
+
+        <div id="btnArea" style="margin-bottom: 20px;">
+            <button>접수하기</button>
+            <button type="reset">다시 쓰기</button>
+        </div>
+
+    </div>
+    <!-- div#wrap -->
+</body>
+</html>

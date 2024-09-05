@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 주문서</title>
+    <style>
+        div#wrap {
+            width: 600px;
+            padding: 0 10px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        fieldset>legend {
+            color: #850da3;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        label {
+            margin-left: 30px;
+            display: block;
+        }
+
+        label>span {
+            width: 90px;       /* 인라인 요소는 폭과 높이가 적용 안됨 */
+            font-weight: bold;
+            /* border: 1px solid #000; */
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        textarea {
+            width: 330px;
+            height: 50px;
+            vertical-align: top;
+        }
+
+        div#btnArea {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        div#btnArea>button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>상품 주문서</h1>
+
+        <fieldset>
+            <legend>개인 정보</legend>
+            <label>
+                <span>이름</span>
+                <input type="text" placeholder="여백없이 입력">
+            </label>
+            <label>
+                <span>연락처</span>
+                <input type="text" placeholder="연락가능한 번호">
+            </label>
+        </fieldset>
+        <!-- 개인정보 -->
+
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <label>
+                <span>주소</span>
+                <input type="text" size="45">
+            </label>
+            <label>
+                <span>전화번호</span>
+                <input type="text">
+            </label>
+            <label>
+                <span>메 모</span>
+                <textarea></textarea>
+            </label>
+        </fieldset>
+        <!-- 배송지 정보 -->
+
+        <fieldset>
+            <legend>주문 정보</legend>
+
+            <label><input type="checkbox" checked>
+                과테말라 안티구아 (100g)
+                <input type="text" size="3" value="0">개</input>
+            </label>
+            <label><input type="checkbox">
+                인도네시아 만델링 (100g)
+                <input type="text" size="3" value="0">개</input>
+            </label>
+            <label><input type="checkbox">
+                탐라는도다(블렌딩) (100g)
+                <input type="text" size="3" value="0">개</input>
+            </label>
+        </fieldset>
+        <!-- 주문 정보 -->
+
+        <div id="btnArea">
+            <button>주문하기</button>
+            <button type="reset">다시작성</button>
+        </div>
+    </div>
+    <!-- div#wrap -->
+</body>
+</html>

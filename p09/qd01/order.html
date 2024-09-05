@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 주문서</title>
+    <style>
+        div#wrap {
+            width: 580px;
+            padding: 0 10px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            padding: 30px 50px;
+            border: 1px solid #000;
+            margin: 10px;
+        }
+
+        legend {
+            color: rgb(196, 40, 183);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        fieldset.font {
+            font-weight: bold;
+        }
+
+        fieldset#coffee>input {
+            width: 50px;
+            margin: 0 auto;
+        }
+
+        fieldset#button {
+            border: none;
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+        }
+
+        div.line {
+            display: flex;
+        }
+
+        span {
+            display: block;
+            width: 70px;
+        }
+
+        input {
+            margin: 5px;
+            height: 18px;
+        }
+
+        input#add {
+            width: 280px;
+        }
+
+        textarea {
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>상품 주문서</h1>
+        <form action="">
+            <fieldset class="font">
+                <legend>개인 정보</legend>
+                <div class="line">
+                    <span>이름</span><input type="text" placeholder="여백없이 입력">
+                </div>
+                <div class="line">
+                    <span>연락처</span><input type="text" placeholder="연락가능한 번호">
+                </div>
+            </fieldset>
+            <fieldset class="font">
+                <legend>배송지 정보</legend>
+                <div class="line">
+                    <span>주소</span><input type="text" id="add">
+                </div>
+                <div class="line">
+                    <span>전화번호</span><input type="text">
+                </div>
+                <div class="line">
+                    <span>메 모</span><textarea rows="3" cols="40"></textarea>
+                </div>
+            </fieldset>
+            <fieldset id="coffee">
+                <legend>주문 정보</legend>
+                <input type="checkbox" name="coffee" checked>과테말라 안티구아 (100g)
+                <input type="text" value="0">개
+                <br>
+                <input type="checkbox" name="coffee">인도네시아 만델링 (100g)
+                <input type="text" value="0">개
+                <br>
+                <input type="checkbox" name="coffee" id="">탐라는도다(블렌딩) (100g)
+                <input type="text" value="0">개
+            </fieldset>
+            <fieldset id="button">
+                <button>주문하기</button>
+                <button type="reset">다시작성</button>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>
