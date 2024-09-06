@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+h1 { color: #aaa; }
+
+p { font-size: 20px; }
+
+a { color: #333; text-decoration: none; }
+
+h2 { color: rgba(0, 0, 255, 0.6); font-style: italic; }
+
+ul { font-weight: bold; line-height: 2em; }
+/* CSS의 상속 = 상위 요소에 CSS를 적으면, 하위요소가 그 내용을 물려 받는다. 단, 모든 것에 적용되지는 않는다. */
+
+h1, h2 { font-family: Georgia, serif;}
+
+p, a, li { font-family: Verdana, sans-serif;}

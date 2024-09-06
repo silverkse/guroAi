@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+h1 {
+    color: #aaa;
+    font-family: Georgia, serif;
+
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h2 {
+    color: rgba(0, 0, 255, 0.6);
+    font-style: italic;
+    font-family: Georgia, serif;
+
+}
+
+ul>li {
+    font-weight: bold;
+    line-height: 2em;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}

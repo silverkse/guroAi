@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+div#wrap {
+    width: 600px;
+    padding: 10px;
+    border: 3px solid #000;
+    margin: 0 auto;
+}
+
+header#header {
+    padding-left: 40px;
+}
+
+#header img {
+    vertical-align: middle;
+}
+
+div#skills ul li#highlight span {
+    background-color: #ff0;
+}
+
+div#education h2{
+    margin-bottom: 0;
+}
+
+table#eduTbl {
+    width: 480px;
+    /* border: 1px solid #000; */
+    border-collapse: collapse;
+}
+
+#eduTbl th {
+    padding: 8px;
+    border-top: 3px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    background-color: rgb(148, 202, 248);
+}
+
+#eduTbl td {
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #aaa;
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+div#wrap {
+  border: 3px solid #f00;
+  width: 300px;
+  margin: 0 auto;
+  height: 140px;
+}
+
+div#login {
+  padding: 0 10px 3px;
+  border: 1px solid #000;
+  height: 90px;
+}
+
+input {
+  border: none;
+  background-color: #eee;
+  height: 30px;
+  margin: 5px;
+}

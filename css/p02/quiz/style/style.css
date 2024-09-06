@@ -1,0 +1,16 @@
+@charset "UTF-8";
+p:nth-child(4) {
+  color: brown;
+}
+p:nth-child(5) {
+  color: royalblue;
+}
+a:link {
+  color: yellowgreen;
+}
+li:nth-child(2):hover {
+  color: tomato;
+}
+li:last-child {
+  color: tan;
+}
