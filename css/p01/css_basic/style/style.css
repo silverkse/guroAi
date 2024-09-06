@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* 
+선택자 { CSS 속성 : CSS 속성값; }
+ */
+div {
+    width: 300px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+p {
+    color: #f80;
+    font-size: 30px;
+}
