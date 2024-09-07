@@ -36,16 +36,18 @@ button#submit {
   height: 100%;
   border: none;
   color: #fff;
-  font-size: 17px;
+  font-size: 14px;
   background-color: orange;
+  cursor: pointer;
 }
 
 div#button>span {
-  /* display: inline-block; */
+  display: inline-block;
   text-align: center;
   color: #777;
   font-weight: bold;
   font-size: 13px;
+  cursor: pointer;
 }
 
 div#button {
@@ -55,9 +57,12 @@ div#button {
   justify-content: center;
 }
 
-/* div#button>span:nth-child(2) {
-  border-left: 3px solid #777;
-} */
+div#button>span:nth-child(2) {
+  margin: 0 10px;
+  padding: 0 10px;
+  border-left: 2px solid #777;
+  border-right: 2px solid #777;
+}
 
 
 
