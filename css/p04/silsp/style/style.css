@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+div#wrap {
+  width: 800px;
+  padding: 10px;
+  border: 1px solid #000;
+  margin: 0 auto; /* 외부 가운데 정렬 */
+}
+
+header#header {
+  height: 100px;
+  padding: 10px;
+  border: 2px solid #f80;
+  display: flex;
+  /* flex container 플렉스 컨테이너 */
+}
+
+header>div#headerLogo {
+  width: 200px;
+  border: 2px solid #08f;
+  /* flex box 플렉스 박스 */
+}
+
+header>nav#gnb {
+  flex: 1;
+  border: 2px solid #08f;
+  /* flex box 플렉스 박스 */
+}
+
+div#contents {
+  height: 200px;
+  padding: 10px;
+  border: 2px solid #000;
+
+  display: flex;
+
+  /* justify-content: space-around; */
+  justify-content: space-between;
+}
+
+div#contents>div {
+  font-size: 30px;
+  border: 2px solid #f80;
+  margin: 4px;
+  /* flex: 1; */
+}

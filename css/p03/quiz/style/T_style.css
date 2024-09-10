@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+div#elixirs {
+  width: 250px;
+  /* 폭과 높이의 기본 범위는 contens */
+  text-align: center;
+  padding: 0 20px 20px 20px;
+  border: 2px solid #007e7e;
+  margin-left: 40px;
+  background-image: url(../images/cocktail.gif);
+  background-repeat: repeat-x;
+
+  box-sizing: border-box;
+  /* width에 관한 속성
+  box-sizing을 사용하지 않을 경우 기본값은 box-sizing: content-box*/
+}
+
+h2 {
+  transform: translateY(-4px);
+  line-height: 26px;
+}
+
+div.drink {
+  line-height: 19px;
+}
+
+div.drink > h3 {
+  /* color: rgb(201, 24, 112); */
+  color: #9c5568;
+}
+
+div.drink > p {
+  font-size: 12px;
+}
+
+div#footer {
+  font-size: 12px;
+}

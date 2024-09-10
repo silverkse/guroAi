@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+  /* asterisk 글로벌 선택자*/
+
+  box-sizing: border-box;
+}
+
+div#wrap {
+  width: 670px;
+  padding: 10px;
+  border: 2px solid #aaa;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+hr {
+  height: 2px;
+  background-color: #000;
+}
+
+form {
+  padding: 10px;
+  /* border: 1px solid #000; */
+}
+
+/* div#indInfoArea 개인정보 영역 시작 */
+div.indInfoItem {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 15px;
+}
+
+div#indInfoArea div.indInfoItem > label {
+  margin-top: 10px;
+  display: flex;
+}
+
+div#indInfoArea div.indInfoItem > label > span {
+  /* border: 1px solid #08f; */
+  display: inline-block;
+}
+
+div#indInfoArea div.indInfoItem > label > span:nth-child(1) {
+  width: 180px;
+  padding-top: 4px;
+}
+
+div#indInfoArea div.indInfoItem > label > span:nth-child(2) {
+  flex: 1; /*나머지 영역 모두 차지*/
+}
+
+#indInfoArea .indInfoItem span:nth-child(2) input[type=text] {
+  width: 100%;
+  padding: 8px 14px;
+}
+
+#indInfoArea span.hintMsg {
+  font-size: 14px;
+  /* border: 1px solid #f80; */
+  margin-left: 180px;
+}
+
+div#phone select {
+  width: 70px;
+  font-size: 16px;
+  padding: 6px 3px;
+}
+
+div#phone input[type=phone] {
+  width: 80px;
+  font-size: 16px;
+  padding: 6px 8px;
+}
+
+/*/ 필수(Required)영역 작업 시작 /*/
+.req::after {
+  content: " *";
+  color: #08f;
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 6px;
+  display: inline-block;
+  transform: translateY(4px);
+}
+/*/ 필수영역 작업 끝 /*/
+
+/* div#indInfoArea 개인정보 영역 끝 */
+
+
+/* div#agreeArea 약관동의 영역 시작 */
+div#agreeArea {
+  margin-bottom: 30px;
+}
+
+div#wholeAgree {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 20px;
+}
+
+div#wholeAgree>input[type=checkbox] {
+  width: 26px;
+  height: 26px;
+  transform: translateY(4px);
+}
+
+div#wholeAgree>h2 {
+  display: inline-block;
+}
+
+div#wholeAgree>span {
+  font-size: 14px;
+}
+
+div#agreeArea div.agreeChkSection {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#agreeArea .agreeChkSection input[type=checkbox] {
+  width: 17px;
+  height: 17px;
+  transform: translateY(3px);
+}
+
+#agreeArea .agreeChkSection span {
+  font-size: 14px;
+}
+
+#agreeArea .agreeChkSection span.licenseSpan{
+  height: 20px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #aaa;
+}
+
+#agreeArea .agreeChkSection a {
+  color: #777;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#agreeArea .agreeChkSection a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* div#agreeArea 약관동의 영역 끝 */
+
+
+/* 버튼영역 div#btnArea 시작*/
+div#btnArea {
+  text-align: center;
+}
+
+#btnArea button {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  width: 190px;
+  line-height: 54px;
+  border: none;
+  background-color: #000;
+}
+
+#btnArea button:hover {
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+/* 버튼영역 div#btnArea 끝*/

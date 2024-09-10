@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h2>회원 가입</h2>
+      <hr />
+      <form action="https://www.naver.com">
+        <div class="input">
+          <div class="pWrap"><p>이메일</p><img src="images/ico_req.gif" alt="아이콘" /></div>
+          <input type="text" name="email" id="" />
+        </div>
+        <div class="input">
+          <div class="pWrap"><p>아이디</p><img src="images/ico_req.gif" alt="아이콘" /></div>
+          <div class="smallText">
+            <input type="text" name="id" id="" />
+            <p>(영문소문자/숫자, 4~16자)</p>
+          </div>
+        </div>
+        <div class="input">
+          <div class="pWrap"><p>비밀번호</p><img src="images/ico_req.gif" alt="아이콘" /></div>
+          <div class="smallText">
+            <input type="text" name="pwd" id="" />
+            <p>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~ 6자)</p>
+          </div>
+        </div>
+        <div class="input">
+          <div class="pWrap"><p>비밀번호 확인</p><img src="images/ico_req.gif" alt="아이콘" /></div>
+          <input type="text" name="pwdCheck" id="" />
+        </div>
+        <div class="input">
+          <div class="pWrap"><p>이름</p><img src="images/ico_req.gif" alt="아이콘" /></div>
+          <input type="text" name="name" id="" />
+        </div>
+        <div class="input">
+          <div class="pWrap"><p>휴대전화</p></div>
+          <div id="forNum">
+            <select name="firstPhone" id="firstNum">
+              <option value="1" selected>010</option>
+              <option value="2">011</option>
+              <option value="3">031</option>
+            </select>
+            <span>-</span>
+            <input type="text" name="phone" id="" class="phoneNum" />
+            <span>-</span>
+            <input type="text" name="phone" id="" class="phoneNum"/>
+          </div>
+        </div>
+        <div id="agreeCheck">
+          <div class="check">
+            <input type="checkbox" name="agreeAll" id="allCheck">
+            <label for="allCheck" id="allCheckTxt">전체동의</label>
+            <span>이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</span>
+          </div>
+          <div class="check"><input type="checkbox" name="agree" id="first">
+            <label for="first">[필수] 이용약관 동의</label>
+            <a href="#">약관보기</a></div>
+          <div class="check">
+            <input type="checkbox" name="agree" id="second">
+            <label for="second">[필수]개인정보 수집 및 이용 동의</label>
+            <a href="#">약관보기</a>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="agree" id="third">
+            <label for="second">[선택]SMS 수신을 동의하십니까?</label>
+            <input type="checkbox" name="agree" id="fourth">
+            <label for="second">[선택]이메일 수신을 동의하십니까?</label>
+            <a href="#">약관보기</a>
+          </div> 
+        </div>
+        <button>회원가입</button>
+      </form>
+    </div>
+  </body>
+</html>

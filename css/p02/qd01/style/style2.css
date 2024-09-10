@@ -1,5 +1,27 @@
 @charset "UTF-8";
 
+table#mainTbl {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table#mainTbl td {
+  padding: 15px 20px;
+}
+
+table#mainTbl td:nth-child(2) {
+  border-left: 1px solid #ccc;
+  padding-left: 0;
+}
+
+ul p {
+  font-size: 14px;
+}
+
+
 div#wrap {
   border: 1px solid #aaa;
   width: 305px;
@@ -24,12 +46,12 @@ input {
   border: none;
   background-color: #eee;
   height: 40%;
-  padding-left: 10px;;
+  padding-left: 10px;
 }
 
-div#input>input:nth-child(1) {
+div#input > input:nth-child(1) {
   margin-bottom: 8%;
-} 
+}
 
 button#submit {
   width: 100%;
@@ -41,7 +63,7 @@ button#submit {
   cursor: pointer;
 }
 
-div#button>span {
+div#button > span {
   display: inline-block;
   text-align: center;
   color: #888;
@@ -57,12 +79,9 @@ div#button {
   justify-content: center;
 }
 
-div#button>span:nth-child(2) {
+div#button > span:nth-child(2) {
   margin: 0 8px;
   padding: 0 8px;
   border-left: 2px solid #888;
   border-right: 2px solid #888;
 }
-
-
-

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+div#wrap {
+}
+
+div#elixirs {
+  width: 250px;
+  border: 2px solid #007e7e;
+  padding: 0 20px 20px 20px;
+  margin-left: 40px;
+  text-align: center;
+  align-items: center;
+  background-image: url(../images/cocktail.gif);
+  background-repeat: repeat-x;
+  background-position: center top;
+
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 15px;
+}
+
+footer > p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 10px;
+}
