@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+/* CSS Reset, CSS 리셋(=초기화) 시작 */
+* {
+  color: #222; /* #000 순수한 검정보다는 짙은 회색 */
+  font-family: "Nanum Gothic", sans-serif;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* CSS Reset, CSS 리셋(=초기화) 끝 */
+
+/* div#wrap 시작 */
+div#wrap {
+  width: 1000px;
+  padding: 20px 20px 10px 20px;
+  border: 3px solid #aaa;
+  margin: 20px auto;
+}
+/* div#wrap 끝 */
+
+/* div#main 본문 영역 시작 */
+div#main {
+  /* border: 1px solid #000; */
+  display: flex;
+}
+
+/*/ main#mainLeft 시작 /*/
+main#mainLeft {
+  line-height: 26px;
+  font-size: 14px;
+  padding-right: 18px;
+}
+
+#main h1 {
+  margin: 30px 0 20px;
+  color: #396566;
+}
+
+#main p {
+  margin: 15px 0;
+}
+
+/*// div#callOut 본문 중앙 초록박스 시작 //*/
+div#callOut {
+  margin-right: 15px;
+  padding: 20px 33px 20px 100px;
+
+  background-image: url(../images/background.gif);
+  background-repeat: no-repeat;
+
+  border: 2px dotted #ffffff;
+  background-color: #b6d3d6;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#callOut p {
+  font-style: italic;
+}
+
+/*// div#callOut 본문 중앙 초록박스 끝 //*/
+
+#main h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #396566;
+}
+
+ul#music {
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+span.itallic {
+  font-style: italic;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+/*/ main#mainLeft 끝 /*/
+
+/*/ div#mainRight 시작 /*/
+div#mainRight {
+  width: 760px;
+  border: 2px solid #aaa;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+
+  background-image: url(../images/cocktail.gif);
+  background-repeat: repeat-x;
+  background-position: top center;
+}
+
+#mainRight h3 {
+  font-size: 20px;
+  margin: 10px;
+  margin: 0 0 10px 0;
+}
+
+#mainRight img {
+  margin: 10px 0;
+}
+
+#mainRight h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #af587a;
+}
+
+#mainRight p {
+  margin: 15px 0;
+}
+
+#mainRight p:last-child {
+  margin-bottom: 20px;
+}
+/*/ div#mainRight 끝 /*/
+
+/* div#main 본문 영역 끝 */
+
+/* footer#footer 시작 */
+footer#footer {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+/* footer#footer 끝 */

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+/* 
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nanum-gothic-bold {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nanum-gothic-extrabold {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+ */
+
+/* Reset 시작 */
+* {
+  color: #222;
+
+  font-family: "Nanum Gothic", sans-serif;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Reset 끝 */
+
+/* div#wrap 시작 */
+div#wrap {
+  width: 900px;
+  padding: 10px;
+  border: 3px solid #aaa;
+  margin: 20px auto;
+}
+/* div#wrap 끝 */
+
+/* main#main 시작 */
+main#main {
+  display: flex;
+}
+/* / #main>div#mainLeft 시작 / */
+#main > div#mainLeft {
+  flex: 1;
+}
+
+#main>div#mainLeft h1,
+#main>div#mainLeft h2 {
+  color: #5a7163;
+}
+
+#main > div#mainLeft p {
+  font-size: 13px;
+  line-height: 25px;
+  margin: 20px 0;
+}
+
+#mainLeft p#warranty {
+  font-style: italic;
+  padding: 25px 25px 25px 100px;
+  border: 1px dashed #fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #b6d3d6;
+  background-image: url(../images/background.gif);
+  background-repeat: no-repeat;
+}
+
+#mainLeft ul {
+  margin-left: 35px;
+}
+
+#mainLeft li {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+/* / #main>div#mainLeft 끝 / */
+
+/* / #main>aside#elixir 시작 / */
+#main > aside#elixir {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #b6d3d6;
+  margin-left: 22px;
+  background-image: url(../images/cocktail.gif);
+  background-repeat: repeat-x;
+}
+
+#elixir div.drink {
+  margin: 17px 0;
+}
+
+#elixir div.drink h4{
+  color: #89546b;
+  margin: 10px 0;
+}
+
+#elixir p {
+  font-size: 13px;
+}
+
+/* / #main>aside#elixir 끝 / */
+
+/* main#main 끝 */
+
+/* footer#footer 시작 */
+footer#footer {
+  margin-top: 10px;
+}
+footer#footer p {
+  font-size: 11px;
+  text-align: center;
+}
+/* footer#footer 끝 */

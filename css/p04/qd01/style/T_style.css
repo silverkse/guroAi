@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* CSS Reset, CSS 리셋(=초기화) 시작 */
+* {
+  color: #222; /* #000 순수한 검정보다는 짙은 회색 */
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* CSS Reset, CSS 리셋(=초기화) 끝 */
+
+div#wrap {
+  width: 968px;  /* 968px로 설정 시 좌우 테두리 선으로 인해서 이미지가 표시되는 실제 공간 962px */
+  border: 3px solid rgb(133, 198, 255);
+  margin: 30px auto;
+}
+
+/* header#header 시작 */
+header#header {
+  width: 967px;
+  height: 283px;
+  padding-top: 15px;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 963px 100%;
+  /* overflow 범람하는 내부의 요소를 알맞게 표시
+      = 범람영역 표시하지 않기 */
+}
+header > h1 {
+  color: #ff0;
+  font-size: 80px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+  margin-left: 10px;
+}
+/* header#header 끝 */
+
+/* nav#gnb 시작 */
+nav#gnb {
+  background-color: #2d691b;
+}
+
+#gnb li.mainLi {
+  padding: 10px 30px;
+  margin: 5px 35px;
+
+  cursor: pointer;
+  display: inline-block;
+}
+
+#gnb li.mainLi:hover a {
+  font-weight: bold;
+}
+
+#gnb a {
+  color: #fff;
+  font-size: 15px;
+}
+/* nav#gnb 끝 */
+
+/* main#main 시작 */
+main#main {
+  display: flex;
+}
+
+main#main h2,
+main#main h3 {
+  margin: 10px 0;
+}
+
+#main p {
+  font-size: 15px;
+  line-height: 22px;
+  margin: 12px 0;
+}
+
+/* / div#mainLeft 시작 / */
+div#mainLeft {
+  padding: 15px 15px 0;
+}
+/* / div#mainLeft 끝 / */
+
+
+/* / aside#gallery 시작 / */
+aside#gallery {
+  padding: 5px 10px;
+  background-color: #e4fae1;
+}
+/* / aside#gallery 끝 / */
+
+/* main#main 끝 */
+
+/* footer#footer 시작 */
+footer#footer {
+  padding: 5px;
+  background-color: #0f201e;
+}
+#footer>* {
+  color: #fff;
+  font-style: normal;
+  text-align: center;
+}
+#footer > address {
+  line-height: 40px;
+}
+#footer p {
+  font-style: italic;
+}
+/* footer#footer 끝 */
