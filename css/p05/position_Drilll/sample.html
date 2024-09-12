@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포지션 레이아웃</title>
+  <style>
+    div.divCls {
+      width: 100px;
+      height: 100px;
+      border: 5px solid #000;
+      font-size: 30px;
+      text-align: center;
+      line-height: 100px;
+      margin: 30px;
+    }
+
+    #div1 {
+      background-color: #08f;
+      position: absolute;
+      z-index: -10;
+    }
+    #div2 {
+      background-color: #f80;
+      margin-left: 50px;
+      position: absolute;
+      z-index: -999;
+    }
+    #div3 {
+      background-color: #5a5;
+      margin-left: 70px;
+      position: absolute;
+      z-index: -5;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="wrap">
+    <h1>2차원 공간 유지/소멸</h1>
+    <hr>
+
+    <div id="div1" class="divCls">Div1</div>
+    <div id="div2" class="divCls">Div2</div>
+    <div id="div3" class="divCls">Div3</div>
+  </div>
+</body>
+</html>

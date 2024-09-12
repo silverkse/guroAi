@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed, Sticky의 뷰포트</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    div#wrap {
+      width: 1900px;
+      height: 4000px;
+      border: 50px solid #f80;
+    }
+
+    div#viewport {
+      width: 300px;
+      height: 300px;
+      font-size: 30px;
+      border: 10px solid #08f;
+      background-color: #08f;
+      position: fixed;     
+      /* margin-top: 100px;  */
+      /* top: 0px; */
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="viewport">Sticky</div>
+
+  </div>
+</body>
+</html>
