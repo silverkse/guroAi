@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#parent {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+h1{
+
+  font-family: 'Nanum	Gothic', sans-serif; /*	나눔고딕체	적용		*/
+
+}
+
+p {
+  border: 1px solid #08f;
+  margin: 10px;
+}

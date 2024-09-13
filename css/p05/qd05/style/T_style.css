@@ -23,6 +23,17 @@ div#wrap {
 }
 /* div#wrap 끝 */
 
+/* iframe 시작 */
+iframe#headerFrm {
+  width: 100%;
+  height: 108px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+/* iframe 끝 */
+
 /* header#header 시작 */
 header#header {
   width: 937px;
@@ -30,13 +41,26 @@ header#header {
   background-color: #68604d;
   background-image: url(../images/header.gif);
   background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 /* header#header 끝 */
 
 /* nav#gnb 시작 */
+iframe#navFrm {
+  width: 100%;
+  height: 108px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
 nav#gnb {
   padding: 10px;
   background-color: #e5dabe;
+  transform: translateY(-4px);
 }
 
 #gnb > ul#mainMenu {
@@ -112,13 +136,17 @@ ul.menuList > li {
 }
 
 #main > section#contents h1 {
-  font-size: 32px;
+  font-size: 25px;
   margin: 4px 0 10px;
 }
 
 #main > section#contents > article p {
   font-size: 14px;
   margin-bottom: 15px;
+}
+
+#main > section#contents > article video {
+  width: 98%;
 }
 /* / section#contents 끝 / */
 

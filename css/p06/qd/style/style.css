@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#bigWrap {
+  background-image: url(/images/background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 1160px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  border: 3px solid #aaa;
+}
+
+div#wrap {
+  width: 1060px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-top: none;
+  background-color: #fff;
+}
+
+/* header#header 시작 */
+header#header ul#headerMenu {
+  background-color: rgb(187, 23, 56);
+}
+#header ul#headerMenu li{
+  padding: 10px;
+  /* border: 1px solid #000; */
+}
+#header ul#headerMenu li:hover{
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#header ul#headerMenu li:nth-child(1) {
+  margin-left: 30px;
+}
+#header ul#headerMenu li a {
+  color: #fff !important;
+  /* font-weight: bold; */
+}
+/* header#header 끝 */
+
+/* main#main 시작 */
+/* / div#mainTop시작 / */
+div#mainTop {
+  padding: 30px 30px 0 30px;
+  /* border: 1px solid #000; */
+}
+div#mainTopRight {
+  padding: 30px 30px 30px 70px;
+  flex: 1;
+  /* border: 1px solid #000; */
+}
+div#mainTopRight h1 {
+  margin: 20px;
+  font-size: 28px;
+}
+div#mainTopRight p {
+  line-height: 28px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(219, 120, 7);
+}
+/* / div#mainTop끝 / */
+
+/* / div#mainBottom 시작 / */
+div#mainBottom {
+  padding: 0 10px;
+  justify-content: space-around;
+  gap: 15px;
+}
+#mainBottom div#mainBottomFirst {
+  margin-top: 18px;
+  /* border: 1px solid #000; */
+  flex: 1;
+}
+#mainBottom div#mainBottomFirst p {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(238, 122, 109);
+  color: #fff;
+}
+#mainBottom div#mainBottomFirst ul {
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 20px;
+  padding: 15px;
+  list-style: disc;
+}
+#mainBottom div#mainBottomFirst span {
+  font-weight: bold;
+}
+div#mainBottom div.flowers {
+  /* margin: 10px; */
+  flex: 1;
+  border: 2px solid #aaa;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+div#mainBottom div.flowers:hover {
+  cursor: pointer;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  border: 3px solid olivedrab;
+  height: 224px;
+  opacity: 0.6;
+}
+div.flowers img {
+  width: 160px;
+  height: 220px;
+}
+div.text {
+  padding-right: 10px;
+  width: 100%;
+  /* border: 1px solid #000; */
+  text-align: right;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+div.text h1 {
+  font-size: 28px;
+  color: #853b61;
+}
+div.text p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4469b9;
+}
+/* / div#mainBottom 끝 / */
+
+/* main#main 끝 */
+
+/* footer#footer 시작 */
+footer#footer {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-top: 20px;
+  border-top: 2px solid #ccc;
+  font-size: 14px;
+}
+ul#footerMenu {
+  gap: 25px;
+}
+ul#footerMenu li {
+  padding: 15px;
+}
+ul#footerMenu li:hover {
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* footer#footer 끝 */
+

@@ -9,17 +9,8 @@
   <body>
     <div id="wrap">
       <!-- header#header+nav#gnb+main#main>nav#lnb+section#contents+aside#adv^footer#footer -->
-      <header id="header"></header>
-      <nav id="gnb">
-        <!-- ul#mainMenu>li.mainLi*5>a[href=#] -->
-        <ul id="mainMenu">
-          <li class="mainLi selected"><a href="/T_index.html">홈</a></li>
-          <li class="mainLi"><a href="/blog/T_blog.html">블로그</a></li>
-          <li class="mainLi"><a href="#">신제품</a></li>
-          <li class="mainLi"><a href="#">조리법</a></li>
-          <li class="mainLi"><a href="#">위치</a></li>
-        </ul>
-      </nav>
+      <iframe id="headerFrm" src="/ind/header.html"></iframe>
+      <iframe id="navFrm" src="/ind/nav.html" frameborder="0"></iframe>
       <main id="main">
         <nav id="lnb">
           <div id="coffeeMenu">
@@ -129,5 +120,11 @@
         <p>이 사이트의 모든 상표와 등록된 상표는 해당 소유자의 자산입니다.</p>
       </footer>
     </div>
+
+    <script>
+      function test() {
+        alert("작업중입니다.\n이용에 불편을 드려죄송합니다.");
+      }
+    </script>
   </body>
 </html>

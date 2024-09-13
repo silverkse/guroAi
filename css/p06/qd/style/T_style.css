@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url(/style/T_style_Reset.css);
+
+/* div#wrap 시작 */
+div#wrap {
+  width: 1060px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+/* div#wrap 끝 */
+
+/* header#header시작 */
+header#header {
+  width: 1060px;
+  height: 195px;
+  background-image: url(/images/topbg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1058px 196px;
+  background-position: center top;
+  /*                가로위치 세로위치 */
+}
+/* header#header끝 */
+
+/* nav#gnb 시작 */
+nav#gnb {
+  padding: 0 40px;
+  background-color: #b93040;
+}
+#gnb>ul#mainMenu>li.mainLi:hover a {
+  opacity: 0.5;
+  cursor: pointer;
+}
+#gnb>ul#mainMenu>li.mainLi a {
+  color: #fff;
+  font-weight: bold;
+  padding: 14px 4px;
+  margin: 0 10px;
+  display: inline-block;
+}
+/* nav#gnb 끝 */
