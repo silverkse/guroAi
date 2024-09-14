@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM(=문서객체모델, Document Object Model)</title>
+</head>
+<body>
+  <div id="wrap">
+    <p class="testP">1</p>
+    <span>2</span>
+    <p class="testP">3</p>
+    <div>4</div>
+    <a>5</a>
+
+  </div>
+  <script>
+    const dom = document.querySelector(".testP");
+    dom.outerHTML = "<u>가나다</u>";
+
+  </script>
+</body>
+</html>

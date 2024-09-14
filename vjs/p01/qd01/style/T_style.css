@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+div#wrap {
+  width: 340px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+div#ref {
+  padding: 20px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+div#output {
+  height: 50px;
+  border: 1px solid #000;
+}
+
+button {
+  cursor: pointer;
+}

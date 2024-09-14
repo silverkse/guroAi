@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+div#wrap {
+  width: 360px;
+  margin: 20px auto;
+}
+
+div#ref {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #aaa;
+}
+
+button {
+  margin: 20px 30px;
+  display: block;
+}
+
+div#output {
+  height: 80px;
+  border: 2px solid #aaa;
+}

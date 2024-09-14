@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+div#wrap {
+  width: 320px;
+  padding: 10px;
+  margin: 20px auto;
+  border: 1px solid #000;
+}
+
+/* div#calc {
+  width: 90%;
+  border: 1px solid #000;
+} */
+
+ol#numList {
+  font-size: 20px;
+}
+
+ol#numList > li {
+  width: 100%;
+  margin: 10px 0;
+  align-items: center;
+}
+
+ol#numList > li > span {
+  display: inline-block;
+}
+
+input {
+  width: 130px;
+  height: 26px;
+}
+
+button {
+  width: 230px;
+  height: 40px;
+}
+
+div#res {
+  width: 240px;
+  height: 40px;
+  padding: 15px;
+  border: 1px solid #000;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+div#res span {
+  display: block;
+  margin: 0 5px;
+  /* flex: 1; */
+}

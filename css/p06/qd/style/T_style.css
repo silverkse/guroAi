@@ -7,6 +7,10 @@ div#wrap {
   border: 1px solid #aaa;
   border-radius: 4px;
   margin: 0 auto;
+
+  margin-bottom: 50px;
+
+  background-color: #fff;
 }
 /* div#wrap 끝 */
 
@@ -16,9 +20,7 @@ header#header {
   height: 195px;
   background-image: url(/images/topbg.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: 1058px 196px;
-  background-position: center top;
   /*                가로위치 세로위치 */
 }
 /* header#header끝 */
@@ -28,11 +30,11 @@ nav#gnb {
   padding: 0 40px;
   background-color: #b93040;
 }
-#gnb>ul#mainMenu>li.mainLi:hover a {
-  opacity: 0.5;
+#gnb > ul#mainMenu > li.mainLi:hover a {
+  opacity: 0.85;
   cursor: pointer;
 }
-#gnb>ul#mainMenu>li.mainLi a {
+#gnb > ul#mainMenu > li.mainLi a {
   color: #fff;
   font-weight: bold;
   padding: 14px 4px;
@@ -40,3 +42,130 @@ nav#gnb {
   display: inline-block;
 }
 /* nav#gnb 끝 */
+
+/* main#main 시작 */
+/* main#main {
+  border: 1px solid #f80;
+} */
+#main > div#shopImg {
+  width: 430px;
+  height: 280px;
+  /* border: 1px solid #000; */
+  background-image: url(../images/shop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#main > section#promotion {
+  /* border: 1px solid #000; */
+  flex: 1;
+  position: relative;
+}
+#main > section#promotion > article {
+  width: 480px;
+  /* border: 1px solid #000; */
+  position: absolute;
+  left: 47%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+#main > section#promotion > article h2 {
+  text-indent: 20px;
+  margin-bottom: 20px;
+}
+#main > section#promotion > article p {
+  color: #d95717;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+}
+/* main#main 끝 */
+
+/* div#contents 시작 */
+div#contents {
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+div#contents > div.flexbox {
+  height: 200px;
+  /* border: 1px solid #000; */
+  margin: 0 7px;
+  flex: 1;
+}
+div#contents > div.flexbox:not(:first-child) {
+  padding-top: 130px;
+  border: 1px dotted #000;
+  border-radius: 8px;
+}
+div#contents > div.flexbox:not(:first-child):hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+div#contents > div.flexbox > h4 {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 15px 0 20px;
+  background-color: #ec6e6f;
+}
+div#contents > div.flexbox > ul {
+  margin-left: 20px;
+  list-style-type: square;
+  list-style-position: inside;
+}
+div#contents > div.flexbox > ul > li {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+div#contents div#bouquet {
+  background-image: url(../images/flower1.png);
+    /* 꽃 배경 이미지 적용 */
+  background-repeat: no-repeat;
+  background-size: 200px 100%;
+}
+div#contents div#flowerBasket {
+  background-image: url(../images/flower2.png);
+    /* 꽃 배경 이미지 적용 */
+  background-repeat: no-repeat;
+  background-size: 150px 100%;
+}
+div#contents div#wreath {
+  background-image: url(../images/flower3.png);
+    /* 꽃 배경 이미지 적용 */
+  background-repeat: no-repeat;
+  background-size: 150px 100%;
+}
+
+div#contents > div.flexbox h3 {
+  color: #864966;
+  text-align: right;
+  margin-bottom: 8px;
+}
+div#contents > div.flexbox hgroup {
+  padding: 4px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+div#contents > div.flexbox h5 {
+  color: #294471;
+  text-align: right;
+  margin-top: 8px;
+}
+/* div#contents 끝 */
+
+/* footer#footer 시작 */
+footer#footer {
+  padding-left: 20px;
+  border-top: 1px solid #aaa;
+}
+#footer li.footerMainLi:hover a {
+  font-weight: bold;
+  cursor: pointer;
+}
+#footer li.footerMainLi a {
+  font-size: 12px;
+  padding: 14px 16px;
+  /* border: 1px solid #000; */
+  display: inline-block;
+}
+/* footer#footer 끝 */

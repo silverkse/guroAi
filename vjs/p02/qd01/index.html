@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employment rate 취업률 계산기</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h2>Quiz01. 취업률을 구하시오.</h2>
+      <div id="calc">
+        <form>
+          <ol id="numList">
+            <li>
+              <span>졸업자 수</span>
+              <input type="text" name="" id="graduates" />
+            </li>
+            <li>
+              <span>취업자 수</span>
+              <input type="text" name="" id="employed" />
+            </li>
+            <li>
+              <button onclick="fnRate()" type="button">취업률 계산</button>
+            </li>
+          </ol>
+        </form>
+      </div>
+
+        <div id="res">
+          <span>취업률 : </span>
+          <span id="rate"></span>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

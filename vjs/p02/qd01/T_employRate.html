@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Drill</title>
+  <link rel="stylesheet" href="style/T_style.css">
+</head>
+<body>
+  <div id="wrap">
+    <h1>Quiz01. 취업률을 구하시오.</h1>
+    
+    <ol>
+      <li>
+        졸업자 수
+        <input type="text" id="num1" autofocus>
+      </li>
+      <li>
+        취업자 수
+        <input type="text" id="num2">
+      </li>
+      <li>
+        <button onclick="fnRes()" type="button">취업률 계산</button>
+      </li>
+    </ol>
+
+    <div id="resArea">
+      <span>취업률 : </span>
+      <span id="res"></span>
+    </div>
+
+  </div>
+  <script src="script/T_script.js"></script>
+</body>
+</html>

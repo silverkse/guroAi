@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <style>
+    fieldset {
+      width: 300px;
+      padding: 30px 10px;
+      margin: 20px 0;
+    }
+    legend {
+      font-size: 24px;
+    }
+    div#res {
+      padding: 20px;
+      border: 3px solid #f80;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>버튼 클릭하면 JS 함수 실행</h1>
+    <button onclick="fnDivide()" type="button">클릭</button>
+    <br>
+    <fieldset>
+      <legend>결과</legend>
+      <div id="res">
+      </div>
+    </fieldset>
+  </div>
+  <script src="script/T-script.js"></script>
+</body>
+</html>
