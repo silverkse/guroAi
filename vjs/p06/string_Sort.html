@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>문자열 배열 정렬</h1>
+  <script>
+    // const strAry = ['레몬', '딸기', '수박'];
+    const strAry = [5, 0, 1, -2, -4];
+    strAry.sort();
+    console.log(strAry.toString())
+    strAry.reverse();
+    console.log(strAry.toString())
+    
+    strAry.sort(function(x, y){return x-y});
+    console.log(strAry.toString())
+    strAry.sort(function(x, y){return y-x});
+    console.log(strAry.toString())
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+    width: 440px;
+    padding: 20px 30px;
+    border: 4px solid #aaa;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+ol {
+  padding: 30px 20px;
+  /* border: 1px solid #000; */
+  list-style-position: inside;
+}
+
+ol > li {
+  font-size: 24px;
+  line-height: 44px;
+}
+
+ol > li input {
+  width: 120px;
+  font-size: 22px;
+  padding: 4px;
+}
+
+ol > li button {
+  width: 270px;
+  font-size: 22px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+ol > li button:hover {
+  font-weight: bold;
+}
+
+div#res {
+  width: 320px;
+  font-size: 24px;
+  padding: 20px 15px;
+  border: 1px solid #000;
+}

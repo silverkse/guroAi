@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품 결제액 계산기</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>결제액 계산</h1>
+      <hr />
+      <div id="main">
+        <div class="selectOption">
+          <label for="products">상품선택</label>
+          <select name="products" id="products">
+            <option value="select" selected>-선택-</option>
+            <option value="과일">과일</option>
+            <option value="음료">음료</option>
+            <option value="빵">빵</option>
+          </select>
+        </div>
+        <div class="selectOption">
+          <label for="price">가격선택</label>
+          <select name="price" id="price">
+            <option value="select" selected>-선택-</option>
+            <option value="1500">1500</option>
+            <option value="2000">2000</option>
+            <option value="3000">3000</option>
+          </select>
+        </div>
+        <div class="selectOption">
+          <label for="count">수량</label>
+          <select name="count" id="count">
+            <option value="select" selected>-선택-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <button type="button" onclick="fnCalc()">계산하기</button>
+      </div>
+      <hr>
+      <fieldset>
+        <legend>결제액</legend>
+        <p id="res"></p>
+      </fieldset>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

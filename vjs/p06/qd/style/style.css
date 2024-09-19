@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 260px;
+  padding: 20px;
+  border: 4px solid #aaa;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+div#input {
+  margin: 10px auto;
+  display: flex;
+  font-size: 18px;
+}
+
+input {
+  height: 30px;
+  width: 50px;
+  font-size: 18px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+div#inputLeft {
+  flex: 1;
+}
+
+div#inputRight {
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  height: 95%;
+  transform: translateY(4px);
+}

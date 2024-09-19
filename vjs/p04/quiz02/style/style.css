@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+    width: 260px;
+    padding: 20px;
+    border: 4px solid #aaa;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+div.selectOption {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0;
+}
+
+div.selectOption select{
+    width: 120px;
+    height: 25px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+div#main button {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+fieldset {
+    height: 80px;
+    padding: 15px 20px 20px;
+}

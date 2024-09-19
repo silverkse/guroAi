@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .dFlex {
+        display: flex;
+      }
+      div#wrap {
+        width: 320px;
+        padding: 20px 10px;
+        border: 3px solid #aaa;
+        border-radius: 6px;
+        margin: 20px auto;
+      }
+      hr {
+        margin: 10px 0;
+      }
+      label {
+        font-size: 20px;
+      }
+      input {
+        width: 100px;
+        font-size: 18px;
+        padding: 5px 8px 4px;
+      }
+      button {
+        font-size: 20px;
+        padding: 2px 8px;
+        transform: translateY(2px);
+        cursor: pointer;
+      }
+      button:hover {
+        font-weight: bold;
+      }
+      fieldset {
+        padding: 6px 15px;
+        height: 80px;
+      }
+      fieldset legend {
+        font-size: 22px;
+      }
+      span#res {
+        width: 100%;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>자료형 확인</h1>
+      <hr />
+      <label>
+        입력
+        <input type="text" id="txt" />
+      </label>
+      <button type="button" onclick="chkDataType()">확인</button>
+      <hr />
+      <fieldset>
+        <legend>자료형</legend>
+        <span id="res"></span>
+      </fieldset>
+    </div>
+    <script>
+      function chkDataType() {
+        let data = document.querySelector("#txt").value;
+        let res = typeof data;
+        document.querySelector("#res").innerText = res;
+      }
+    </script>
+  </body>
+</html>

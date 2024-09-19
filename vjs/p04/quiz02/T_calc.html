@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz2</title>
+  <link rel="stylesheet" href="style/T_style.css">
+</head>"
+<body>
+  <div id="wrap">
+    <h1>결제액 계산</h1>
+    <hr>
+    <ul>
+      <li>
+    <!-- ul>li*3>label>span+select>option*3 -->
+        <label><span>상품선택</span>
+          <select id="goods">
+            <option value="">-선택-</option>
+            <option>과일</option>
+            <option>음료</option>
+            <option>빵</option>
+          </select>
+        </label>
+      </li>
+      <li>
+        <label><span>가격선택</span>
+          <select id="price">
+            <option value="">-선택-</option>
+            <option>1500</option>
+            <option>2000</option>
+            <option>3000</option>
+          </select>
+        </label>
+      </li>
+      <li>
+        <label><span>수량</span>
+          <select id="cnt">
+            <option value="">-선택-</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </label>
+      </li>
+    </ul>
+    <!-- button[type=button]{계산하기} -->
+    <button type="button">계산하기</button>
+    <hr>
+    <fieldset>
+      <legend>결제액</legend>
+      <span id="res"></span>
+    </fieldset>
+  </div>
+  <script src="script/T_script.js"></script>
+</body>
+</html>

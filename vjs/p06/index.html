@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열 정렬</title>
+  <style>
+    div {
+      width: 300px;
+      height: 60px;
+      padding: 10px;
+      border: 1px solid #000;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>배열정렬</h1>
+  <div id="res1"></div>
+  <div id="res2"></div>
+
+  <script>
+    let ary = [24, -7, -11, 3];
+    console.log(ary.toString());
+    console.log("정렬"); // 그냥 정렬이라고 하면 오름차순 정렬을 의미 함
+
+    console.log(ary.sort(function(m, n) {return m-n}).toString());
+
+    ary.sort(function(a,b){return a-b});
+    console.log(ary.toString());
+
+    console.log("내림차순 정렬");
+    ary.sort(function(a,b){return b-a});
+    console.log(ary.toString());
+
+  </script>
+</body>
+</html>
