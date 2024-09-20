@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz4</title>
+  </head>
+  <body>
+    <script>
+      let bigNum = parseInt(prompt("첫 번째 숫자 입력"));
+      let smallNum = parseInt(prompt("두 번째 숫자 입력"));
+      let temp = "";
+      if (bigNum < smallNum) {
+        temp = bigNum;
+        bigNum = smallNum;
+        smallNum = temp;
+      }
+
+      let ary = [];
+      let j = 0;
+      let txt = "";
+      for(let i = smallNum; i <= bigNum; i++) {
+        if (i % 2 == 0) {
+          ary[j++] = i;
+          txt += i;
+          if (i < bigNum - 1) {
+            txt += ", ";
+          }
+        }
+      }
+
+      console.log(`${smallNum}부터 ${bigNum}사이의 짝수`);
+      console.log(ary.toString());
+      console.log(txt);
+      console.log("\nEnd.");
+    </script>
+  </body>
+</html>

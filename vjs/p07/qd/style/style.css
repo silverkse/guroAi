@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 290px;
+  padding: 20px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+label {
+  display: block;
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 10px 0;
+}
+
+label > span {
+  width: 110px;
+  display: block;
+}
+
+input[type=text] {
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+}
+
+div#buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  margin: 10px 0;
+}
+
+div#resArea {
+  height: 90px;
+}
+
+p {
+  line-height: 32px;
+}

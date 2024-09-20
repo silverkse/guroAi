@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플렉스 레이아웃</title>
+  <style>
+    div#wrap {
+      width: 400px;
+      padding: 20px;
+      border: 1px solid #000;
+    }
+    main {
+      height: 200px;
+      padding: 4px;
+      border: 3px solid #f80;
+
+      display: flex;
+      justify-content: center; /* 가로방향 정렬 */
+      align-items: stretch;
+      /* flex-start, flex-end, center, stretch : 세로 정렬에 사용 */
+      /* flex-wrap => 갤러리 게시판 */
+    }
+    span {
+      flex: 2;  /* 가중치 분배 2:1 */
+      border: 1px solid #08f;
+    }
+    p {
+      flex: 1;  /* 가중치 분배 2:1 */
+      border: 1px solid #08f;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>플렉스 레이아웃</h1>
+    <hr>
+    <main> <!-- 부모: 플렉스 컨테이너 -->
+      <span>내용1(1열)</span> <!-- 자식: 플렉스 박스 -->
+      <p> <!-- 자식: 플렉스 박스 -->
+        내용2(2열)<br>
+        asdfasdfa<br>
+        asdfasdfd
+      </p>
+    </main>
+  </div>
+</body>
+</html>

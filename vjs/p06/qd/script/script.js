@@ -6,10 +6,9 @@ function calc() {
   ary[1] = document.querySelector("#index2").value;
   ary[2] = document.querySelector("#index3").value;
   ary[3] = document.querySelector("#index4").value;
-  // for (i = 0; i < 4; i++) {
-  //   ary[i] = document.querySelector("#index" + i+1).value;
-  // }
+
   console.log("입력한 배열 : " + ary.toString());
+
   let sum = 0;
   for (i = 0; i < ary.length; i++) {
     sum += parseInt(ary[i]);
@@ -25,4 +24,6 @@ function calc() {
 
   ary.sort(function(x, y) {return y-x});
   console.log("내림차순 정렬 : " + ary.toString());
+
+  console.log("\nEnd.");
 }
