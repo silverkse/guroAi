@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const ary = [3.4, 15, -0.6, 7];
+      // const ary = [17, -9, 4, 5.3, 21];
+      console.log(ary);
+      let max = ary[0];
+      for (let i = 0; i < ary.length; i++) {
+        if (max < ary[i]) max = ary[i];
+      }
+      console.log("최대값 : " + max);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 910px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+table {
+  border: 1px solid #08f;
+  border-collapse: collapse;
+}
+tr {
+  display: flex;
+}
+td {
+  width: 110px;
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #08f;
+}
