@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz2</title>
+    <style>
+      div#wrap {
+        width: 300px;
+        padding: 10px;
+        margin: 20px auto;
+        border: 1px solid #000;
+      }
+      #wrap span {
+        width: 180px;
+        display: inline-block;
+        border: 1px solid #000;
+      }
+      #wrap button {
+        padding: 3px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <span id="nowTime"></span>
+      <button type="button" id="start">Start</button>
+      <button type="button" id="stop">Stop</button>
+    </div>
+    <script>
+      const time = new Date();
+      const dateDom = document.querySelector("span#nowTime");
+      let timeText;
+      let timer;
+      // if (time.getHours() > 12) {
+      //   timeText = "오후 " + (time.getHours() - 12);
+      // } else {
+      //   timeText = "오전 " + time.getHours();
+      // }
+      // timeText += ":" + time.getMinutes() + ":";
+      // timeText += time.getSeconds();
+      // dateDom.innerText = timeText;
+
+      // document
+      //   .querySelector("button#start")
+      //   .addEventListener("click", function () {});
+
+      dateDom.innerText = time.toLocaleTimeString();
+      
+      function timeStart() {
+        let now = new Date();
+        dateDom.innerText = now.toLocaleTimeString();
+      }
+
+      document.querySelector("button#start").addEventListener("click", function(){
+        timer = setInterval(timeStart, 1000);
+      });
+      document.querySelector("button#stop").addEventListener("click", function(){
+        clearInterval(timer);
+      })
+    </script>
+  </body>
+</html>

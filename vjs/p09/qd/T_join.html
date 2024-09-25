@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QD-회원가입</title>
+    <link rel="stylesheet" href="style/T_style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>회원가입</h1>
+
+      <!-- div.infoItem*5>label>span+input -->
+      <form id="joinMain">
+        <div class="infoItem">
+          <label>
+            <span class="req">아이디</span>
+            <input type="text" autofocus id="userid" readonly/>
+          </label>
+          <button type="button" id="dupChkBtn">중복확인</button>
+        </div>
+        <div class="infoItem">
+          <label>
+            <span class="req">비밀번호</span>
+            <input type="text" id="userpw" />
+          </label>
+        </div>
+        <div class="infoItem">
+          <label>
+            <span>비밀번호 확인</span>
+            <input type="text" id="userpw_Re" />
+          </label>
+        </div>
+        <div class="infoItem" id="emailArea">
+          <label>
+            <span class="req">이메일</span>
+            <input type="text" id="userEmail_1" />
+            <i>@</i>
+            <input type="text" id="userEmail_2" />
+          </label>
+          <select id="emailDomain">
+            <option value="">직접입력</option>
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+          </select>
+        </div>
+        <div class="infoItem" id="btnArea">
+          <button type="reset">가입취소</button>
+          <button type="button">회원가입</button>
+        </div>
+      </form>
+    </div>
+    <script src="script/T_script.js"></script>
+  </body>
+</html>

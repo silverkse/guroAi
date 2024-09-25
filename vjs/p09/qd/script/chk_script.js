@@ -1,0 +1,3 @@
+function fnIdChkClose() {
+  window.close();
+}

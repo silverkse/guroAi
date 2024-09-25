@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+/* 회원가입 페이지 wrap 시작 */
+div#wrap {
+  width: 640px;
+  padding: 20px;
+  border: 3px solid #4be;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+  text-indent: 40px;
+  margin: 15px 0;
+}
+
+#wrap div.infoItem {
+  padding: 10px;
+  border-block-start: 1px solid #aaa;
+}
+#wrap div.infoItem:first-child {
+  border-top: 4px solid #aaa;
+}
+#wrap div.infoItem span {
+  width: 130px;
+  font-weight: bold;
+  text-align: right;
+  /* border: 1px solid #000; */
+  margin-right: 15px;
+  display: inline-block;
+}
+#wrap div.infoItem input{
+  width: 170px;
+  font-size: 18px;
+  padding: 4px 8px 5px;
+}
+
+/*/ 이메일 입력 스타일 시작 /*/
+form#joinMain div#emailArea input{
+  width: 120px;
+}
+form#joinMain div#emailArea i{
+  font-size: 20px;
+  font-style: normal;
+}
+
+form#joinMain div#emailArea select {
+  font-size: 18px;
+  padding: 4px 10px 5px;
+}
+/*/ 이메일 입력 스타일 끝 /*/
+
+/*/ 하단 버튼영역 시작 /*/
+form#joinMain div#btnArea {
+  text-align: center;
+}
+form#joinMain div#btnArea button{
+  padding: 12px 30px;
+  margin: 2px;
+}
+/*/ 하단 버튼영역 끝 /*/
+
+/*/ 필수 입력 사항 시작 /*/
+form#joinMain span.req::before {
+  content: "*";
+  color: #f00;
+  margin-right: 6px;
+}
+/*/ 필수 입력 사항 끝 /*/
+
+/*/ 버튼 공통사항 시작 /*/
+#wrap form#joinMain button {
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 8px 7px;
+  border: none;
+  background-color: #888;
+  cursor: pointer;
+}
+#wrap form#joinMain button:hover {
+  counter-reset: #eee;
+  background-color: #777;
+}
+/*/ 버튼 공통사항 끝 /*/
+
+/* 회원가입 페이지 wrap 끝 */
+
+/* 회원가입 아이디 중복 체크 팝업 시작 */
+div#wrap.popupWrap {
+  width: 350px;
+  padding: 20px;
+}
+#wrap.popupWrap h1 {
+  margin: 0;
+}
+#wrap.popupWrap hr {
+  margin: 15px 0;
+}
+#wrap.popupWrap form {
+  padding: 0 10px;
+}
+#wrap.popupWrap form label {
+  margin: 15px 0;
+  display: inline-block;
+}
+#wrap.popupWrap form label>span {
+  font-size: 22px;
+  font-weight: bold;
+}
+#wrap.popupWrap form label>span+input {
+  width: 230px;
+  font-size: 20px;
+  padding: 3px 10px;
+}
+#wrap.popupWrap form div#popupBtnArea {
+  text-align: center;
+  display: flex;
+}
+#wrap.popupWrap #popupBtnArea button {
+  font-size: 24px;
+  padding: 4px;
+  margin: 4px;
+  cursor: pointer;
+  flex: 1;
+}
+/* 회원가입 아이디 중복 체크 팝업 끝 */

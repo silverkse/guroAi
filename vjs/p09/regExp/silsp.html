@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레귤러 익스프레션 ()= 정규 표현식, 정규식)</title>
+    <style>
+      div#wrap {
+        width: 220px;
+        padding: 20px;
+        border: 3px solid #08f;
+        margin: 20px auto;
+      }
+      label {
+        font-size: 20px;
+      }
+      input {
+        width: 130px;
+        font-size: 20px;
+        padding: 2px 6px;
+      }
+      button {
+        font-size: 17px;
+        font-weight: bold;
+        margin: 10px;
+        cursor: pointer;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>정규 표현식</h1>
+      <label for=""> 이름 <input type="text" id="chkData" /> </label>
+      <p>(이름에는 한글만 입력 가능함)</p>
+      <button type="button">입력데이터유효성검사</button>
+    </div>
+
+    <script>
+      const btnDom = document.querySelector("button");
+      btnDom.addEventListener("click", function () {
+        let chkData = document.querySelector("#chkData").value;
+
+        let chkReg = /[^ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+        // 정규 표현식
+
+        let chkRes = chkReg.test(chkData.trim());
+        if (chkRes == "") {
+          alert("이름을 입력해주세요");
+        } else if (chkRes) {
+          alert("이름에는 한글만 사용할 수 있습니다.");
+        } else {
+          alert("올바른 입력입니다.");
+        }
+
+        // console.log(chkReg.test(chkData));
+      });
+    </script>
+  </body>
+</html>

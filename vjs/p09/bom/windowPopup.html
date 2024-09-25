@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>윈도우 팝업</title>
+  <style>
+    main#main {
+      width: 400px;
+      height: 300px;
+      border: 1px solid #000;
+      background-color: #f80;
+    }
+    div#layerBG {
+      display: none;
+      width: 100%;
+      height: 100%;
+      border: 5px solid #5a5;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+    #layerBG>div#popupLayer {
+      width: 200px;
+      height: 100px;
+      border: 3px solid #08f;
+      background-color: rgba(0, 138, 255, 0.9);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+
+    <main id="main"></main>
+
+    <button type="button" onclick="fnModal()">레이어 팝업 클릭</button>
+    <button type="button" onclick="fnWin()">윈도우 팝업 클릭</button>
+    <button type="button" onclick="fnClose()">윈도우 팝업 닫기</button>
+
+  </div>
+  <div id="layerBG">
+    <div id="popupLayer"></div>
+  </div>
+  <script>
+    function fnModal() {
+      document.querySelector("#layerBG").style.display = "block";
+    }
+
+
+    let openFlag;
+    function fnWin() {
+      let scrWid = screen.width;        // 모니터의 폭
+      let scrHei = screen.height;      // 모니터의 높이
+      let popWid = 400;                // 윈도우 팝업창 폭
+      let popHei = 300;                // 윈도우 팝업창 높이
+      let leftPos = (scrWid-popWid)/2;  // (scWid/2 - popWid/2;)
+      let topPos = (scrHei-popHei)/2;  // (scWid/2 - popWid/2;)
+
+      let url = "https://www.naver.com";
+      let popName = "팝업창이름";
+      let attr = "";
+      attr += "width=" + popWid + "px, ";
+      attr += "height=" + popHei + "px, ";
+      attr += "left=" + leftPos + "px, ";
+      attr += "top=" + topPos + "px";    // attribute, 속성
+                        // 가로폭, 세로높이, 왼쪽과 상단에서의 위치
+      openFlag = window.open(url, popName, attr);
+    }
+
+    function fnClose() {
+      openFlag.close();
+    }
+  </script>
+</body>
+</html>

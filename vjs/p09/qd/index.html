@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Drill 회원가입</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>회원가입</h1>
+      <hr id="hrBold" />
+      <form action="#">
+        <label>
+          <span class="spanText"><span class="ast">*</span>아이디</span>
+          <input id="id" type="text" name="" maxlength="20" />
+          <button id="chkBtn" type="button" onclick="fnIdChk()">중복확인</button>
+        </label>
+        <hr />
+        <label>
+        <span class="spanText"><span class="ast">*</span>비밀번호</span>
+        <input id="pw" type="password" name="" maxlength="20" />
+      </label>
+      <hr />
+      <label>
+        <span class="spanText" >비밀번호 확인</span>
+        <input id="chkPw" type="password" name="" onblur="fnChkPw()" maxlength="20"/>
+        <span id="chkMsg"></span>
+      </label>
+      <hr />
+      <label>
+        <span class="spanText"><span class="ast">*</span>이메일</span>
+        <input id="emailBox" type="text" name="" />
+      </label>
+      <span>@</span>
+      <label>
+        <input id="domainBox" type="text" name="" />
+        <select name="" id="domain" onchange="fnSelectDomain()">
+          <option value="" selected>직접입력</option>
+          <option value="naver.com">naver.com</option>
+          <option value="daum.net">daum.net</option>
+        </select>
+      </label>
+      <hr />
+      <div id="btnArea">
+        <button class="submitBtn" type="reset">가입취소</button>
+        <button class="submitBtn" type="button" onclick="fnRegChk()">회원가입</button>
+      </div>
+    </form>
+    </div>
+    
+    <script src="script/script.js"></script>
+  </body>
+</html>

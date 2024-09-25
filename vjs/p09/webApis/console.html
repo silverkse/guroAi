@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console</title>
+  </head>
+  <body>
+    <h1>디버깅 관련 Api(작업 처리 시간)</h1>
+    <script>
+      alert("작업 처리 시간을 체크합니다.");
+
+      console.time("chkTime01");
+
+      for (let i = 0; i < 20; i++) {
+        console.log("OK!!");
+      }
+
+      console.timeEnd("chkTime01");
+    </script>
+  </body>
+</html>
