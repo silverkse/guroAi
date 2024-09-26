@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 400px;
+  padding: 20px 15px;
+  border: 3px solid #08f;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+h1 {
+  text-align: center;
+}
+hr {
+  margin: 15px 0;
+}
+
+div#btnArea {
+  flex-wrap: wrap;
+}
+#btnArea > button {
+  width: 170px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 4px 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+div#resArea {
+  width: 100%;
+  height: 360px;
+  border: 3px solid #f80;
+
+  position: relative;
+}
+
+#resArea div {
+  width: 150px;
+  height: 150px;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 150px;
+  border: 3px solid rgb(30, 214, 214);
+  background-color: rgb(23, 185, 185);
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

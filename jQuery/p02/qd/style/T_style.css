@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 400px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+  text-align: center;
+}
+hr {
+  margin: 10px 0;
+}
+
+div#btnArea {
+  padding-left: 20px;
+  /* border: 1px solid #000; */
+  display: flex;
+}
+#btnArea button {
+  font-size: 20px;
+  padding: 4px 10px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+
+  position: relative;
+  top: 1px;
+}
+#btnArea button:first-child {
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+}
+#btnArea button:hover {
+  font-weight: bold;
+}
+
+div#noticeArea {
+  height: 130px;
+  border: 1px solid #aaa;
+}
+div#noticeArea table {
+  width: 100%;
+  /* border: 1px solid #08f; */
+}
+div#noticeArea table td {
+  height: 30px;
+  padding: 0 4px;
+}
+
+div#galleryArea {
+  height: 130px;
+  border: 1px solid #aaa;
+  display: none;
+}
+#galleryArea table {
+  width: 100%;
+  /* border: 1px solid #08f; */
+}
+#galleryArea table td {
+  height: 125px;
+  text-align: center;
+}

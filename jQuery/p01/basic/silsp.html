@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>제이쿼리 기초 사용법</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>가나다</h1>
+      <button type="button">클릭</button>
+    </div>
+
+    <!-- 제이쿼리 시작 -->
+    <!-- <script src="script/jquery-3.7.1.slim.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <!-- <script src="/script/jQuery_CDN.js"></script> -->
+    <script>
+      // $(document).ready(function() {
+
+      // });    // 제이쿼리 템플릿
+      $(function () {
+        // $("선택자").메서드();
+        $("h1").css({ "color": "red" });
+        $("button").css({
+          "font-size": "24px",
+          "cursor": "pointer",
+          "color": "royalblue"
+        });
+
+        // 추가기능(익명함수 사용)
+        $("button").click(function(){
+          $("h1").css({
+            "color": "green"
+          });
+          alert("OK");
+        });
+      }); // 제이쿼리 템플릿 단축 표기
+    </script>
+  </body>
+</html>

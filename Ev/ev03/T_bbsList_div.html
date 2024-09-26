@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내부평가_Ev03(게시판 목록)</title>
+  <link rel="stylesheet" href="style/T_style_div.css">
+</head>
+<body>
+  <div id="wrap">
+
+    <header id="header">
+      <h1>List 페이지</h1>
+      <nav id="gnb">
+        <!-- ul#mainMenu>li.mainLi*4>a[href=#] -->
+        <ul id="mainMenu" class="dFlex">
+          <li class="mainLi"><a href="#">메인으로</a></li>
+          <li class="mainLi"><a href="#">로그인</a></li>
+          <li class="mainLi"><a href="#">글쓰기</a></li>
+          <li class="mainLi"><a href="#">자유게시판 보기</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div id="listCntArea" class="dFlex">
+        <span>전체 게시글:51개</span>
+        <span>페이지:7/11</span>
+      </div>
+      <div id="listHeader" class="dFlex listRow">
+        <span>번호</span>
+        <span>제목</span>
+        <span>이름</span>
+        <span>날짜</span>
+        <span>조회수</span>
+      </div>
+      <div class="dFlex listRow listContent">
+        <span>21</span>
+        <span>연습글제목입니다</span>
+        <span>테스터01</span>
+        <span>2021-04-27</span>
+        <span>0</span>
+      </div>
+      <div class="dFlex listRow listContent">
+        <span>20</span>
+        <span>연습글제목입니다</span>
+        <span>테스터01</span>
+        <span>2021-04-27</span>
+        <span>0</span>
+      </div>
+      <div class="dFlex listRow listContent">
+        <span>19</span>
+        <span>연습글제목입니다</span>
+        <span>테스터01</span>
+        <span>2021-04-27</span>
+        <span>0</span>
+      </div>
+      <div class="dFlex listRow listContent">
+        <span>18</span>
+        <span>연습글제목입니다</span>
+        <span>테스터01</span>
+        <span>2021-04-27</span>
+        <span>0</span>
+      </div>
+      <div class="dFlex listRow listContent">
+        <span>17</span>
+        <span>연습글제목입니다</span>
+        <span>테스터01</span>
+        <span>2021-04-27</span>
+        <span>0</span>
+      </div>
+      <div id="listFooter" class="dFlex">
+        <div id="pagingArea">
+          <span>&lt;</span>
+          <span>6</span>
+          <span class="nowPage">7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>&gt;</span>
+        </div>
+        <form id="searchArea">
+          <select id="searchItem">
+            <option>제목</option>
+            <option>이름</option>
+            <option>내용</option>
+          </select>
+          <input type="text">
+          <button type="button">검색</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

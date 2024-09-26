@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내부평가_Ev03(게시판 목록)</title>
+  <link rel="stylesheet" href="style/T_style_table.css">
+</head>
+<body>
+  <div id="wrap">
+
+    <header id="header">
+      <h1>List 페이지</h1>
+      <nav id="gnb">
+        <!-- ul#mainMenu>li.mainLi*4>a[href=#] -->
+        <ul id="mainMenu" class="dFlex">
+          <li class="mainLi"><a href="#">메인으로</a></li>
+          <li class="mainLi"><a href="#">로그인</a></li>
+          <li class="mainLi"><a href="#">글쓰기</a></li>
+          <li class="mainLi"><a href="#">자유게시판 보기</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+
+      <table id="bbsTbl">
+        <thead>
+          <tr>
+            <td colspan="2">전체 게시글:51개</td>
+            <td colspan="3">페이지:7/11</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>이름</th>
+            <th>날짜</th>
+            <th>조회수</th>
+          </tr>
+          <!-- tr*5>td+td{연습글제목입니다}+td{테스터01}+td{2021-04-27}+td{0} -->
+          <tr>
+            <td>21</td>
+            <td>연습글제목입니다</td>
+            <td>테스터01</td>
+            <td>2021-04-27</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>연습글제목입니다</td>
+            <td>테스터01</td>
+            <td>2021-04-27</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>연습글제목입니다</td>
+            <td>테스터01</td>
+            <td>2021-04-27</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>연습글제목입니다</td>
+            <td>테스터01</td>
+            <td>2021-04-27</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>연습글제목입니다</td>
+            <td>테스터01</td>
+            <td>2021-04-27</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      
+
+      <tfoot>
+        <tr>
+          <td colspan="2">
+            <span>&lt;</span>
+            <span>6</span>
+            <span class="nowPage">7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>&gt;</span>
+          </td>
+          <td colspan="3">
+            <form id="searchArea">
+              <select id="searchItem">
+                <option>제목</option>
+                <option>이름</option>
+                <option>내용</option>
+              </select>
+              <input type="text">
+              <button type="button">검색</button>
+            </form>
+          </td>
+        </tr>
+      </tfoot>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

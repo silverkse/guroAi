@@ -17,6 +17,8 @@ function fnIdChk() {
   attr += "top=" + topPos + "px";
 
   openFlag = window.open(url, popName, attr);
+
+  // openFlag.document.querySelector("#cInput").value = document.querySelector("#id").value;
 }
 
 function fnChkPw() {
@@ -44,15 +46,40 @@ function fnSelectDomain() {
 }
 
 function fnRegChk() {
-  let idBollean = fnIdRegChk();
-  let pwBollean = fnPwRegChk();
-  let emailBollean = fnEmailRegChk();
-
-  if (idBollean && pwBollean && emailBollean) {
-    alert("회원가입이 완료되었습니다.")
+  let id = document.querySelector("#id").value;
+  let pw = document.querySelector("#pw").value;
+  let chkPw = document.querySelector("#chkPw").value;
+  let email = document.querySelector("#emailBox").value;
+  let domain = document.querySelector("#domainBox").value;
+  
+  if (id.trim() == "") {
+    alert("아이디를 입력해주세요.");
+    document.querySelector("#id").focus();
+  } else if (pw.trim() == "") {
+    alert("비밀번호를 입력해주세요.");
+    document.querySelector("#pw").focus();
+  } else if (chkPw.trim() == "") {
+    alert("비밀번호를 입력해주세요.");
+    document.querySelector("#chkPw").focus();
+  } else if (pw != chkPw) {
+    alert("비밀번호를 확인해주세요.");
+  } else if (email.trim() == "") {
+    alert("이메일을 입력해주세요.");
+    document.querySelector("#emailBox").focus();
+  } else if (domain.trim() == "") {
+    alert("이메일 입력해주세요.");
+    document.querySelector("#domainBox").focus();
   } else {
-    alert("다시 시도해 주십시오.")
+    let idBollean = fnIdRegChk();
+    let pwBollean = fnPwRegChk();
+    let emailBollean = fnEmailRegChk();
+    if (idBollean && pwBollean && emailBollean) {
+      alert("회원가입이 완료되었습니다.");
+    } else {
+      alert("다시 시도해 주십시오.");
+    }
   }
+
 }
 
 function fnIdRegChk() {

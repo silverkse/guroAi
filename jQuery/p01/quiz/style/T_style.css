@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 300px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+h1 {
+  text-align: center;
+}
+hr {
+  margin: 10px 0;
+}
+
+main#main {
+  padding: 0 10px;
+  justify-content: space-between;
+}
+#main span {
+  width: 100px;
+  padding: 2px 8px;
+  /* border: 1px solid #000; */
+}
+#main button {
+  font-size: 17px;
+  padding: 3px 6px;
+  cursor: pointer;
+}

@@ -15,20 +15,21 @@
         <div class="infoItem">
           <label>
             <span class="req">아이디</span>
-            <input type="text" autofocus id="userid" readonly/>
+            <input type="text" autofocus id="userid" maxlength="20" readonly/>
           </label>
           <button type="button" id="dupChkBtn">중복확인</button>
         </div>
         <div class="infoItem">
           <label>
             <span class="req">비밀번호</span>
-            <input type="text" id="userpw" />
+            <input type="password" id="userpw" onblur="fnPwChk()"/>
           </label>
+          <span id="pwTxt"></span>
         </div>
         <div class="infoItem">
           <label>
             <span>비밀번호 확인</span>
-            <input type="text" id="userpw_Re" />
+            <input type="password" id="userpw_Re" onblur="fnPwChk()"/>
           </label>
         </div>
         <div class="infoItem" id="emailArea">
@@ -38,7 +39,8 @@
             <i>@</i>
             <input type="text" id="userEmail_2" />
           </label>
-          <select id="emailDomain">
+          <select id="emailDomain" onchange="fnEmailDomain()">
+            <!-- onchange 이벤트 핸들러 : value 값이 변경되었을 때 동작하는 이벤트 -->
             <option value="">직접입력</option>
             <option value="naver.com">naver.com</option>
             <option value="daum.net">daum.net</option>
@@ -46,7 +48,7 @@
         </div>
         <div class="infoItem" id="btnArea">
           <button type="reset">가입취소</button>
-          <button type="button">회원가입</button>
+          <button type="button" onclick="fnSbmChk()">회원가입</button>
         </div>
       </form>
     </div>

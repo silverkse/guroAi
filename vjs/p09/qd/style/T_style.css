@@ -30,6 +30,10 @@ h1 {
   margin-right: 15px;
   display: inline-block;
 }
+#wrap div.infoItem span#pwTxt {
+  color: rgb(209, 25, 80);
+  display: inline;
+}
 #wrap div.infoItem input{
   width: 170px;
   font-size: 18px;
