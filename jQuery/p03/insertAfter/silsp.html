@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>요소 이동</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    div#wrap {
+      width: 500px;
+      padding: 10px;
+      border: 3px solid #aaa;
+      border-radius: 6px;
+      margin: 20px auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    hr {
+      margin: 10px 0;
+    }
+    hr#lastHR {
+      margin: 40px 0 10px;
+    }
+    b {
+      color: #f80;
+      font-size: 19px;
+    }
+    p {
+      width: 240px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      border: 3px solid #08f;
+      margin: 20px auto;
+    }
+    button {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 4px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>요소 이동(insertAfter 메서드)</h1>
+    <hr>
+    
+    <b>레몬</b>
+    <!-- A -->
+     <p id="pTag">
+    <!-- B -->
+      기준텍스트
+    <!-- C -->
+    </p>
+    <!-- D -->
+
+    <hr id="lastHR">
+    <div id="btnArea">
+      <button type="button" id="btn">실행</button>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+
+      $("button#btn").click(function () {
+        
+        $("b").insertAfter("p#pTag");
+        });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz_체크박스 전체선택/해제</title>
+  <link rel="stylesheet" href="style/T_style.css">
+</head>
+<body>
+  <div id="wrap">
+    <h1>체크박스 선택해제</h1>
+
+    <fieldset>
+      <legend>취미</legend>
+      <div id="chkBoxArea" class="dFlex">
+        <label>
+          <span>여행</span>
+          <input type="checkbox" value="여행">
+        </label>
+        <label>
+          <span>음악</span>
+          <input type="checkbox" value="음악">
+        </label>
+        <label>
+          <span>게임</span>
+          <input type="checkbox" value="게임">
+        </label>
+      </div>
+    </fieldset>
+
+    <div id="btnArea">
+      <button type="button" id="chkSetBtn">전체 체크</button>
+      <button type="button" id="chkClearBtn">전체 해제</button>
+    </div>
+
+  </div>
+  <script src="script/jquery-3.7.1.min.js"></script>
+  <script src="script/T_script.js"></script>
+</body>
+</html>

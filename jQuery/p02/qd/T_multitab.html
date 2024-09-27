@@ -13,10 +13,11 @@
 
     <main id="main">
       <div id="btnArea">
-        <button type="button">공지사항</button>
-        <button type="button">갤러리</button>
+        <!-- HTML 요소의 "data-" 커스텀 속성 -->
+        <button type="button" data-link="noticeArea">공지사항</button>
+        <button type="button" data-link="galleryArea">갤러리</button>
       </div>
-      <div id="noticeArea">
+      <div id="noticeArea" class="tabContents">
         <!-- table#noticeTbl>tbody>tr*4>td+td{2020.03.14} -->
         <table id="noticeTbl">
           <tbody>
@@ -39,7 +40,7 @@
           </tbody>
         </table>
       </div>
-      <div id="galleryArea">
+      <div id="galleryArea" class="tabContents">
         <table>
           <tbody>
             <tr>

@@ -8,6 +8,8 @@ $(function() {
     let showBtn;
     let hideBtn;
 
+    // document.querySelector("div#btnArea>button").style.backgroundColor="";
+
     if (btnId == "notice") {
       showArea = document.querySelector("#noticeArea");
       showBtn = document.querySelector("#btnArea button:first-child");

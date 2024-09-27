@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>요소 삽입</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    div#wrap {
+      width: 500px;
+      padding: 10px;
+      border: 3px solid #aaa;
+      border-radius: 6px;
+      margin: 20px auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    hr {
+      margin: 10px 0;
+    }
+    hr#lastHR {
+      margin: 40px 0 10px;
+    }
+    b, i#iTag {
+      color: #f80;
+      font-size: 19px;
+    }
+    p {
+      width: 240px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      border: 3px solid #08f;
+      margin: 20px auto;
+    }
+    button {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 4px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>요소 삽입(after 메서드)</h1>
+    <hr>
+    
+    <!-- A -->
+     <p id="pTag">
+    <!-- B -->
+      기준텍스트
+    <!-- C -->
+    </p>
+    <!-- D -->
+
+    <hr id="lastHR">
+    <div id="btnArea">
+      <button type="button" id="btn">실행</button>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+
+      $("button#btn").click(function () {
+
+        // after와 같은 삽입 메서드 내용
+        // html 태그에 존재하지 않는 요소를 메서드의 인수에 기재하고, 선택자에 있는 대상에 적용한다.
+        $("p#pTag").before("<i id=iTag>레몬</i>");
+
+        // insertAfter와 같은 이동 메서드 내용
+        // <b>태그가 존재하고 있고, 이것을 대상으로 지정한 메서드의 태그로 이동 시킨다.
+        });
+      });
+  </script>
+</body>
+</html>

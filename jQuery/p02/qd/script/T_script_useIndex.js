@@ -21,9 +21,11 @@ $(function() {    // jQuery 템플릿
     $("main#main div.tabContents").css({
       "display" : "none"
     });
-    //    2) button 요소의 data- 커스텀 속성의 값을 사용하여, id 속성으로 활용한다.
-    let idVal = $(this).attr("data-link");
-    $("#"+idVal).show();
+    //    2) button 요소의 인덱스 번호를 사용하여 콘텐츠의 인덱스 번호로 구현하는 방법
+    let idx = $(this).index();
+    // jQuery 선택자: :first, :last, :even, :odd, eq(), ...
+    // $("main#main div.tabContents:eq(0)");
+    $("main#main div.tabContents").eq(idx).show();
 
   });
 
