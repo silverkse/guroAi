@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 1240px;
+  padding: 30px 40px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+/* header#header 스타일 적용 시작 */
+header#header {
+  margin-bottom: 20px;
+}
+
+header#header h1 {
+  text-align: center;
+}
+#header hr {
+  margin: 30px 0 10px;
+  border-top: 3px solid #aaa;
+  border-bottom: none;
+}
+
+#header nav#navBar {
+  justify-content: center;
+  align-items: center;
+}
+#navBar div {
+  padding: 5px 20px;
+  font-size: 14px;
+  /* border: 1px solid #000; */
+}
+#navBar div:nth-child(even) {
+  padding: 0;
+  height: 15px;
+  border-right: 1px solid #000;
+}
+#navBar div:nth-child(odd):hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+/* header#header 스타일 적용 끝 */
+
+/* main#main 스타일 적용 시작 */
+main#main {
+  gap: 60px;
+}
+
+/* / mainLeft 스타일 적용 시작 / */
+#mainLeft img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* / mainLeft 스타일 적용 끝 / */
+
+/* / mainRight 스타일 적용 시작 / */
+#main div#mainRight {
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+  /* overflow: hidden; */
+}
+#mainRight div.items {
+  width: 224px;
+  padding-bottom: 15px;
+  /* border: 1px solid #000; */
+}
+#mainRight div.items:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+#mainRight div.items img {
+  width: 224px;
+  margin-bottom: 5px;
+}
+
+.items p {
+  padding: 0 12px;
+  font-size: 13px;
+  /* border: 1px solid #000; */
+  text-align: center;
+}
+.items p>span.orange {
+  color: rgb(221, 124, 14);
+  font-weight: bold;
+}
+.items > p.green > span {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(8, 131, 131);
+}
+.items > p.green > span.price {
+  font-size: 24px;
+  padding-right: 5px;
+  /* border: 1px solid #000; */
+}
+/* / mainRight 스타일 적용 끝 / */
+/* main#main 스타일 적용 끝 */
+
+/* modal 스타일 적용 시작 */
+div#modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+div#modalClose {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  right: 30px;
+}
+div#modalClose:hover{
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+}
+div#modalWrap {
+  margin: auto;
+  background-color: #fff;
+  border: 2px solid #000;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 10px; */
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#modalWrap > #modalImg img {
+  width: 400px;
+  border-right: 1px solid #000;
+}
+#modalWrap > #modalContents {
+  flex: 1;
+  text-align: center;
+  /* border: 1px solid #000; */
+}
+#modalWrap > #modalContents p {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+}
+/* modal 스타일 적용 끝 */
+

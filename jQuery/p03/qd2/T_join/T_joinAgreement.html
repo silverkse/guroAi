@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>약관 동의</title>
+  <link rel="stylesheet" href="style/T_style_License.css">
+</head>
+<body>
+  <div id="wrap">
+
+    <h1>jQeury each() 메서드 적용</h1>
+    <hr>
+    <div id="chkAllArea">
+      <label>
+        <input type="checkbox" id="chkAll">
+        <span>
+          이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.
+        </span>
+      </label>
+    </div>
+
+    <!-- useAgreeArea -->
+    <div id="useAgreeArea" class="licenseArea">
+      <h2>[필수] 이용약관 동의</h2>
+      <iframe src="T_ind/useAgreement.html" frameborder="0"></iframe>
+      <label>
+        <span>이용약관에 동의하십니까?</span>
+        <input type="checkbox" id="useAgreeChk" class="agreeChk chkReq">
+        <span>동의함 (필수)</span>
+      </label>
+    </div>
+    <!-- useAgreeArea 이용약관 영역 -->
+
+    <div id="indInfoArea" class="licenseArea">
+            <h2>[필수] 개인정보 수집 및 이용 동의</h2>
+      <iframe src="T_ind/indInfoAgree.html" frameborder="0"></iframe>
+      <label>
+        <span>개인정보 수집 및 이용에 동의하십니까?</span>
+        <input type="checkbox" id="indInfoChk" class="agreeChk chkReq">
+        <span>동의함 (필수)</span>
+      </label>
+    </div>
+    <!-- individual information 개인정보 영역 -->
+
+    <div id="shoppingInfoArea" class="licenseArea">
+            <h2>[필수] 쇼핑정보 수신 동의</h2>
+      <iframe src="T_ind/useAgreement.html" frameborder="0"></iframe>
+      <label>
+        <span>쇼핑정보 수신에 동의하십니까?</span>
+        <input type="checkbox" id="shoppingAgreeChk" class="agreeChk">
+        <span>동의함 (선택)</span>
+      </label>
+    </div>
+    <!-- shopping information 쇼핑정보 -->
+
+    <div id="licenseBtnArea">
+      <button type="button" id="licenseJoinBtn">회원가입</button>
+    </div>
+
+  </div>
+  <script src="script/jquery-3.7.1.min.js"></script>
+  <script src="script/T_script_License.js"></script>
+</body>
+</html>

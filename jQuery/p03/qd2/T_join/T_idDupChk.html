@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아이디 중복 체크</title>
+    <link rel="stylesheet" href="style/T_style.css" />
+  </head>
+  <body>
+    <div id="wrap" class="popupWrap">
+      <h1>아이디 중복 체크</h1>
+      <hr />
+      <form id="idDupChkForm">
+        <label>
+          <span>입력</span>
+          <input type="text" id="chkID" autofocus maxlength="20"/>
+        </label>
+        <div id="popupBtnArea">
+          <button type="button" id="confirmBtn" onclick="idSend()">확인</button>
+          <button type="button" id="closeBtn" onclick="popClose()">닫기</button>
+        </div>
+      </form>
+    </div>
+    <script src="script/T_script.js"></script>
+  </body>
+</html>

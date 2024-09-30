@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QD-회원가입</title>
+    <link rel="stylesheet" href="style/T_style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>회원가입</h1>
+
+      <!-- div.infoItem*5>label>span+input -->
+      <form id="joinMain">
+        <div class="infoItem">
+          <label>
+            <span class="req">아이디</span>
+            <input type="text" autofocus id="userid" maxlength="20"/>
+          </label>
+          <button type="button" id="dupChkBtn">중복확인</button>
+        </div>
+        <div class="infoItem">
+          <label>
+            <span class="req">비밀번호</span>
+            <input type="password" id="userpw" onblur="fnPwChk()"/>
+          </label>
+          <span id="pwTxt"></span>
+        </div>
+        <div class="infoItem">
+          <label>
+            <span>비밀번호 확인</span>
+            <input type="password" id="userpw_Re" onblur="fnPwChk()"/>
+          </label>
+        </div>
+        <div class="infoItem" id="emailArea">
+          <label>
+            <span class="req">이메일</span>
+            <input type="text" id="userEmail_1" />
+            <i>@</i>
+            <input type="text" id="userEmail_2" />
+          </label>
+          <select id="emailDomain" onchange="fnEmailDomain()">
+            <!-- onchange 이벤트 핸들러 : value 값이 변경되었을 때 동작하는 이벤트 -->
+            <option value="">직접입력</option>
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+          </select>
+        </div>
+        <div class="infoItem" id="btnArea">
+          <button type="reset">가입취소</button>
+          <button type="button" id="joinSbmBtn">회원가입</button>
+        </div>
+      </form>
+    </div>
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/T_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>약관동의 페이지</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+
+      <div id="header">
+        <label>
+          <input type="checkbox" name="" />
+          <span>
+            이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두
+            동의합니다.
+          </span>
+        </label>
+      </div>
+
+      <main id="main">
+
+        <div class="acceptList">
+          <h1>[필수] 이용약관 동의</h1>
+          <iframe src="accept_html/required1.html" frameborder="0"></iframe>
+          <div class="chkArea">
+            <span>이용약관에 동의하십니까?</span>
+            <label>
+              <input type="checkbox" name="" id="" />
+              <span>동의함 (필수)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="acceptList">
+          <h1>[필수] 개인정보 수집 및 이용 동의</h1>
+          <iframe src="accept_html/required2.html" frameborder="0"></iframe>
+          <div class="chkArea">
+            <span>개인정보 수집 및 이용에 동의하십니까?</span>
+            <label>
+              <input type="checkbox" name="" id="" />
+              <span>동의함 (필수)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="acceptList">
+          <h1>[선택] 쇼핑정보 수신 동의</h1>
+          <iframe src="accept_html/select.html" frameborder="0"></iframe>
+          <div class="chkArea">
+            <span>쇼핑정보 수신에 동의하십니까?</span>
+            <label>
+              <input type="checkbox" name="" id="" />
+              <span>동의함 (선택)</span>
+            </label>
+          </div>
+        </div>
+
+      </main>
+
+      <div id="btnArea">
+        <button type="button">회원가입</button>
+      </div>
+      
+    </div>
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
