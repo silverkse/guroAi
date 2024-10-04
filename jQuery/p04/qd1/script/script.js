@@ -5,6 +5,8 @@ $(function() {
     let price = parseInt($("span.price").eq(i).text());
     $("span.price").eq(i).text(price.toLocaleString());
   }
+  // 가격에 "원" 붙이기
+  $("p.green").find("span:eq(1)").text("원");
 
   // modal 팝업 띄우기
   $("div.items").click(function() {

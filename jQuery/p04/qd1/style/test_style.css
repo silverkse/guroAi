@@ -1,0 +1,63 @@
+@charset "UFT-8";
+
+div#wrap {
+  border: 2px solid #aaa;
+  width: 1200px;
+  margin: 10px;
+  padding: 20px 10px 10px;
+}
+/* gnb리스트 작업 */
+ #gnb {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+  >a{
+    color: black;
+    text-decoration: none;
+  }
+}
+/* gnb리스트 작업 끝*/
+/* 사진 배열 작업 */
+div#img {
+  display: flex;
+}
+/* 오른쪽 사진 창들 작업 */
+div#right {
+  width: 800px;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 10px;
+}
+/* 사진 크기 통일 */
+.img {
+  border: 1px solid #000;
+  width: 220px;
+  /* height: auto; */
+  /* object-fit: cover; */
+}
+
+/* 세미타이틀 색 크기 지정 작업 */
+.semiTilte{
+  color: #f5b154;
+}
+.won{
+color: #89d8cb;
+font-size: 25px;
+}
+#main {
+  display: flex;
+}
+#main2{
+  display: flex;
+}
+li {
+
+  text-align: center;
+  padding: 10px;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}

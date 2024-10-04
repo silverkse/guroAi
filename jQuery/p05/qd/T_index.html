@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QD_메인페이지</title>
+    <link rel="stylesheet" href="style/T_style.css" />
+  </head>
+  <body>
+    <div id="headerWrap">
+      <header id="header" class="dFlex">
+        <div id="headerLogoArea">
+          <a href="/T_index.html">
+            <img src="images/logo_header.png" alt="" />
+          </a>
+        </div>
+        <nav id="gnb">
+          <!-- ul#mainMenu>li.mainLi*4>a[href]{별}+ul.subMenu>li.subLi*4>a[href] -->
+          <ul id="mainMenu" class="dFlex">
+            <li class="mainLi">
+              <a href="#">소장처별</a>
+              <ul class="subMenu">
+                <li class="subLi"><a href="#">한국</a></li>
+                <li class="subLi"><a href="#">프랑스</a></li>
+                <li class="subLi"><a href="#">이탈리아</a></li>
+                <li class="subLi"><a href="#">독일</a></li>
+              </ul>
+            </li>
+            <li class="mainLi">
+              <a href="#">장르별</a>
+              <ul class="subMenu">
+                <li class="subLi"><a href="#">회화</a></li>
+                <li class="subLi"><a href="#">판화</a></li>
+                <li class="subLi"><a href="#">공예/고대유물</a></li>
+                <li class="subLi"><a href="#">그외</a></li>
+              </ul>
+            </li>
+            <li class="mainLi">
+              <a href="#">테마별</a>
+              <ul class="subMenu">
+                <li class="subLi"><a href="#">초상화/인물</a></li>
+                <li class="subLi"><a href="#">종교</a></li>
+                <li class="subLi"><a href="#">신화/문학</a></li>
+                <li class="subLi"><a href="#">일상/스포츠</a></li>
+              </ul>
+            </li>
+            <li class="mainLi">
+              <a href="#">시대별</a>
+              <ul class="subMenu">
+                <li class="subLi"><a href="#">1900년 이전</a></li>
+                <li class="subLi"><a href="#">1900년대</a></li>
+                <li class="subLi"><a href="#">현대</a></li>
+                <li class="subLi"><a href="#">그 외</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div id="wrap">
+      <div id="slideArea">
+        <!-- div#lideFrame>a[href]*3>img -->
+        <div id="slideFrame" class="dFlex">
+          <a href="#">
+            <img src="images/slideShow_01.jpg" alt="슬라이드 이미지" />
+            <span>세계의 거장과 함께한 전시회</span>
+          </a>
+          <a href="#">
+            <img src="images/slideShow_02.jpg" alt="슬라이드 이미지" />
+            <span>야외 조형물 전시장도 오픈합니다.</span>
+          </a>
+          <a href="#">
+            <img src="images/slideShow_03.jpg" alt="슬라이드 이미지" />
+            <span>명화와 함께 떠나는 휴가</span>
+          </a>
+        </div>
+      </div>
+      <div id="contentsArea" class="dFlex">
+        <div id="notice" class="contents">
+          <div class="contentsBtnArea">
+            <button type="button">공지사항</button>
+          </div>
+          <div class="contentsDetail">
+            <div id="txtPop" class="article">
+              <span>2019 시민큐레이터 프로젝트</span>
+              <span>2019/05/07</span>
+            </div>
+            <div class="article">
+              <span>SeMA신소장품 멀티-엑세스 4</span>
+              <span>2019/05/03</span>
+            </div>
+            <div class="article">
+              <span>월 북서울미술관 문화행사 일정</span>
+              <span>2019/02/22</span>
+            </div>
+          </div>
+        </div>
+        <div id="gallery" class="contents">
+          <div class="contentsBtnArea">
+            <button type="button">갤러리</button>
+          </div>
+          <div class="contentsDetail dFlex">
+            <a href="#">
+              <img src="images/gallery_01.jpg" alt="" />
+            </a>
+            <a href="#">
+              <img src="images/gallery_02.jpg" alt="" />
+            </a>
+            <a href="#">
+              <img src="images/gallery_03.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="poster" class="contents">
+          <a href="#"><img src="images/banner.png" alt="배너광고" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="footerWrap">
+      <footer id="footer" class="dFlex">
+
+        <div id="footerLogoArea">
+          <a href="/T_index.html">
+            <img src="images/logo_Footer.png" alt="" />
+          </a>
+        </div>
+
+        <div id="museumInfoArea">
+          <address>
+            04515 서울특별시 중구 덕수궁길 61 (서소문동) (02) 2124-8800
+          </address>
+          <div id="copyright">
+            &copy;2019 Milwaukee Art Museum   700 N.
+            Art Museum Drive  	Milwaukee, WI 53202
+          </div>
+        </div>
+
+        <div id="snsArea">
+          <a href="#">
+            <img src="images/ico_fb.png" alt="페이스북">
+          </a>
+          <a href="#">
+            <img src="images/ico_in.png" alt="인스타그램">
+          </a>
+          <a href="#">
+            <img src="images/ico_blog.png" alt="네이버블로그">
+          </a>
+        </div>
+
+      </footer>
+    </div>
+
+    <!-- div#layerBG>div#layerPopup+span#closeIcon{&times;} -->
+    <div id="layerBG">
+      <div id="layerPopup">
+        <h1>
+          [&quot;여름의 문턱&quot;, 5월 29일 &lt;콘서트+뮤지엄나이트&gt; 개최]
+        </h1>
+
+        <ul>
+          <li>
+            서울시립미술관은 5월 29일 수요일 19:00∽20:00 <br />
+            서소문 본관에서 옥상 세마휴에서 &lt;콘서트+뮤지엄나이트&gt;
+            개최합니다.
+          </li>
+          <li>
+            '여름의 문턱'이라는 주제로 진행되는 이번 콘서트는 <br />
+            뮤지션 오지은의 공연으로 이루어지며, &lt;그렇게 정해진 길
+            위에서&gt;, <br />
+            &lt;NONE&gt; 등 10여 곡을 선보일 예정입니다.
+          </li>
+          <li>
+            오지은은 2018 SeMA 신소장품&lt;멀티-액세스 4913&gt;전과 연계한
+            <br />
+            뮤지엄나이트 프로그램의 뮤직 디렉터를 맡아 전시 작품과 어울리는
+            <br />
+            8개의 곡을 선곡한 바 있습니다.
+          </li>
+        </ul>
+        <button id="closeBtn">닫기</button>
+      </div>
+    </div>
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/T_script.js"></script>
+  </body>
+</html>

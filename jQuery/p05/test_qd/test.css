@@ -1,0 +1,40 @@
+/* modal 레이어 작업 */
+#modlaWrap{
+  display:none;
+  padding: 0 20px;
+  border: 1px solid #f80;
+  border-radius: 10px;
+  background-color: white;
+  width: 630px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+div#list{
+  height: 200px;
+  border: 1px solid #000;
+}
+.inhelt{
+  line-height: 30px;
+  margin: 5px;
+ }
+.inhelt span{
+  font-size: 12px;
+  color: #aaa;
+  display: inline-block;
+  margin: 0;
+  line-height: 0;
+}
+button{
+  cursor: pointer;
+  position: absolute;
+  left: 600px;
+  color: white;
+  background-color: #aaa;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}

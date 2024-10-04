@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 1200px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+  text-align: center;
+}
+hr {
+  margin: 20px 0;
+}
+
+div#slideArea {
+  width: 1000px;
+  height: 350px;
+  /* border: 5px solid #08f; */
+  margin: 0 auto;
+
+  /* overflow: hidden; */
+}
+
+div#slideFrame {
+  width: 1000px;
+  height: 350px;
+  /* border: 2px solid #f80; */
+}
+
+#slideFrame a {
+  position: absolute;
+}
+
+/* 점검용 소스 */
+/* #slideFrame a:nth-child(2) {
+  left: 100px;
+  top: 100px;
+}
+#slideFrame a:nth-child(3) {
+  left: 300px;
+  top: 300px;
+} */
+/* 점검용 소스 */
+
+#slideFrame a:not(:nth-child(1)) {
+  display: none;
+}
+
+div#slideFrame span {
+  color: #55f;
+  width: 200px;
+  height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

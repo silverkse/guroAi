@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery 트래버싱</title>
+    <style>
+      #wrap > * {
+        padding: 5px;
+        border: 2px solid #f00;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <p>p</p>
+      <span>span</span>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <p>p</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("h2").css({"border": "2px solid #08f"})
+              .parent("div#wrap")
+              .css({
+                "color": "#08f",
+                "padding": "10px",
+                "border" : "2px solid #08f"
+              })
+              .prepend("div")
+              .children("h2")
+              .siblings()
+              .css({"color": "red"});
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>백틱을 사용한 템플릿 스트링</title>
+</head>
+<body>
+  <h1>템플릿 리터럴(Template Literal)</h1>
+  <p>문자열 사용방식 재정의</p>
+  <div id="res1"></div>
+  <hr>
+  <div id="res2"></div>
+  <script>
+    let cnt = 3;
+    let dom1 = document.querySelector("#res1");
+    let dom2 = document.querySelector("#res2");
+    dom1.innerText = " \"레몬\" "
+                        + cnt + " 개";
+    dom2.innerText = `"레몬
+                      " ${cnt} 개`;
+  </script>
+</body>
+</html>

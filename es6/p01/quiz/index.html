@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz_Back-Tic</title>
+  <style>
+    div#wrap {
+      width: 330px;
+      padding: 20px 20px;
+      text-align: center;
+      margin: 20px auto;
+      border: 1px solid #000;
+    }
+    div#inputArea {
+      margin: 0;
+      display: flex;
+      justify-content: left;
+      gap: 50px;
+      align-items: center;
+    }
+    #inputArea input[type=text] {
+      width: 30px;
+      padding: 6px 10px;
+      font-size: 16px;
+    }
+    p {
+      padding: 0;
+      text-align: left;
+      line-height: 30px;
+      height: 30px;
+      margin: 10px 0 0;
+      /* border: 1px solid #000; */
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="inputArea">
+      <span>숫자입력</span>
+      <input type="text">
+      <button type="button">결과확인</button>
+    </div>
+    <p></p>
+  </div>
+  <script>
+    document.querySelector("#inputArea button").addEventListener("click", function() {
+      let number = document.querySelector("#inputArea input").value;
+      let textDom = document.querySelector("p");
+      let baesu = 1;
+
+      if (number > 1) {
+        for(let i = 2; i <= number; i++) {
+          if(number % i == 0) {
+            baesu = i;
+            break;
+          }
+        }
+        textDom.innerText = `입력하신 숫자 ${number}은(는) ${baesu}의 배수입니다.`;
+      } else { 
+        textDom.innerText = `2이상의 수를 입력해주세요.`;
+      }
+
+    });
+  </script>
+</body>
+</html>

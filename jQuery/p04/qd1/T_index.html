@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz_Drill_가구 쇼핑몰 메일</title>
+  <link rel="stylesheet" href="style/T_style.css">
+</head>
+<body>
+  <div id="wrap">
+    <!-- header#header+hr+nav#gnb>ul#mainMenu.dFlex^main#main.dFlex -->
+    <header id="header">
+      <h1>가구 베스트</h1>
+    </header>
+    <hr>
+    <nav id="gnb"">
+      <ul id="mainMenu" class="dFlex">
+        <li class="mainLi"><a href="#">침실/옷장</a></li>
+        <li>|</li>
+        <li class="mainLi selected"><a href="#">거실/소파</a></li>
+        <li>|</li>
+        <li class="mainLi"><a href="#">식탁/식탁의자</a></li>
+        <li>|</li>
+        <li class="mainLi"><a href="#">서재/의자</a></li>
+        <li>|</li>
+        <li class="mainLi"><a href="#">자녀방/키즈</a></li>
+        <li>|</li>
+        <li class="mainLi"><a href="#">리모델링/주방기구</a></li>
+      </ul>
+    </nav>
+    <main id="main" class="dFlex">
+      <div id="goodsLink">
+        <a href="#">
+          <img src="images/list_01_390x600.jpg" alt="이미지">
+        </a>
+      </div>
+      <div id="goodsList" class="dFlex">
+
+        <!-- div.goodsItem>div>a>img -->
+        <div class="goodsItem">
+          <div class="goodsImgArea">
+            <a href="#">
+              <img src="images/list_02_615x615.jpg" alt="상품이미지">
+            </a>
+          </div>
+          <div class="goodsInfo">
+            <hgroup>
+              <h5>[리바트온라인]</h5>
+              <h6>
+                솔브 4인 헤드틸팅 리클라이너 소파(양면형, 3색/택1)
+              </h6>
+            </hgroup>
+            <span class="price">835100</span>
+          </div>
+        </div>
+
+        <div class="goodsItem">
+          <div class="goodsImgArea">
+            <a href="#">
+              <img src="images/list_03_615x615.jpg" alt="상품이미지">
+            </a>
+          </div>
+          <div class="goodsInfo">
+            <hgroup>
+              <h5>[리바트온라인]</h5>
+              <h6>뉴 레가토 4인 리클라이너 소파 양면형 3색택1</h6>
+            </hgroup>
+            <span class="price">1059300</span>
+          </div>
+        </div>
+
+        <div class="goodsItem">
+          <div class="goodsImgArea">
+            <a href="#">
+              <img src="images/list_04_615x615.jpg" alt="상품이미지">
+            </a>
+          </div>
+          <div class="goodsInfo">
+            <hgroup>
+              <h5>[리바트온라인]</h5>
+              <h6>올 뉴탐 3인 패브릭 소파 8종택1</h6>
+            </hgroup>
+            <span class="price">419000</span>
+          </div>
+        </div>
+
+        <div class="goodsItem">
+          <div class="goodsImgArea">
+            <a href="#">
+              <img src="images/list_05_220x220.jpg" alt="상품이미지">
+            </a>
+          </div>
+          <div class="goodsInfo">
+            <hgroup>
+              <h5>[리바트온라인]</h5>
+              <h6>무드 레트로 1800 거실장</h6>
+            </hgroup>
+            <span class="price">185000</span>
+          </div>
+        </div>
+
+        <div class="goodsItem">
+          <div class="goodsImgArea">
+            <a href="#">
+              <img src="images/list_06_615x615.jpg" alt="상품이미지">
+            </a>
+          </div>
+          <div class="goodsInfo">
+            <hgroup>
+              <h5>[리바트온라인]</h5>
+              <h6>후아 1800 다리형 거실장 (2색 중 택1)</h6>
+            </hgroup>
+            <span class="price">165000</span>
+          </div>
+        </div>
+
+        <div class="goodsItem">
+          <div class="goodsImgArea">
+            <a href="#">
+              <img src="images/list_07_220x220.jpg" alt="상품이미지">
+            </a>
+          </div>
+          <div class="goodsInfo">
+            <hgroup>
+              <h5>[인터라켄]</h5>
+              <h6>스칸디나 북유럽디자인 이태리가죽 3인소파</h6>
+            </hgroup>
+            <span class="price">899000</span>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- 모달 레이어 팝업 시작 -->
+   <!-- div#layerBG>div#layerPopup+span#closeIcon{&times;} -->
+   <div id="layerBG">   <!-- 불투명 검정 배경 레이어 -->
+    <div id="layerPopup">   <!-- 배경 레이어 중앙에 위치할 팝업 -->
+
+        <div class="goodsItem"></div>
+          <div class="goodsImgArea">
+            <a href="#">
+              <img src="images/list_07_220x220.jpg" id="popImg" alt="상품이미지">
+            </a>
+          </div>
+          <div class="goodsInfo">
+            <hgroup>
+              <h5 id="popGoodsType">[인터라켄]</h5>
+              <h6 id="popGoodsName">스칸디나 북유럽디자인 이태리가죽 3인소파</h6>
+            </hgroup>
+            <span id="popGoodsPrice" class="price">899000</span>
+          </div>
+        </div>
+    </div>
+    <span id="closeIcon">&times;</span>
+   </div>
+  <!-- 모달 레이어 팝업 끝 -->
+
+  <script src="script/jquery-3.7.1.min.js"></script>
+  <script src="script/T_script.js"></script>
+</body>
+</html>

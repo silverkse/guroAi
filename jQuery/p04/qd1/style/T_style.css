@@ -2,9 +2,171 @@
 @import url(style_Reset.css);
 
 div#wrap {
-  width: 640px;
-  padding: 10px;
-  border: 4px solid #aaa;
+  width: 1200px;
+  padding: 20px 10px;
+  border: 2px solid #aaa;
   border-radius: 4px;
   margin: 10px auto;
 }
+
+/* header#header 시작 */
+header#header h1 {
+  text-align: center;
+}
+/* header#header 끝 */
+
+hr {
+  margin: 10px 0;
+}
+
+/* nab#gnb 시작 */
+nav#gnb>ul#mainMenu {
+  /* border: 1px solid #000; */
+
+  justify-content: center;
+}
+#gnb>ul#mainMenu>li:nth-child(2n-1) {
+  text-align: center;
+  padding: 4px 20px;
+  /* border: 1px solid #000; */
+}
+#gnb>#mainMenu>li>a {
+  font-size: 13px;
+}
+#gnb>ul#mainMenu>li:nth-child(2n) {
+  transform: translateY(5px);
+}
+#gnb>ul#mainMenu>li.selected {
+  font-weight: bold;
+}
+#gnb>ul#mainMenu>li:nth-child(2n-1):hover {
+  font-weight: bold;
+}
+/* nab#gnb 끝 */
+
+/* main#main 시작 */
+main#main {
+  padding: 10px 2px 0 2px;
+  /* border: 1px solid #aaa; */
+
+  justify-content: space-around;
+}
+#main>div#goodsLink,
+#main>div#goodsList {
+  /* border: 1px solid #08f; */
+  margin: 0 22px;
+}
+#main>div#goodsList {
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+div#goodsList div.goodsItem {
+  width: 220px;
+  height: 290px;
+  margin: 0 4px 20px;
+  /* border: 1px solid #ddd; */
+}
+
+div#goodsList div.goodsItem .goodsImgArea {
+  text-align: center;
+}
+div#goodsList div.goodsItem .goodsImgArea img {
+  width: 220px;
+}
+#goodsList .goodsItem .goodsInfo {
+  padding: 4px 8px;
+}
+#goodsList .goodsItem .goodsInfo h5 {
+  color: rgb(197, 117, 24);
+  font-size: 13px;
+}
+#goodsList .goodsItem .goodsInfo h6 {
+  font-size: 13px;
+}
+
+#goodsList .goodsItem .goodsInfo hgroup > * {
+  display: inline;
+}
+#goodsList .goodsItem .goodsInfo span.price {
+  color: #375d5e;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  /* border: 1px solid #000; */
+  margin: 5px 0;
+  display: block;
+}
+/* main#main 끝 */
+
+/* 모달 레이어 팝업 시작 */
+div#layerBG {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: none;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#layerBG>div#layerPopup {
+  padding: 10px;
+  /* border: 3px solid #f00; */
+  background-color: #fff;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#layerPopup div.goodsItem .goodsImgArea {
+  text-align: center;
+}
+#layerPopup .goodsItem .goodsInfo h5 {
+  color: rgb(197, 117, 24);
+  font-size: 13px;
+}
+#layerPopup .goodsItem .goodsInfo h6 {
+  font-size: 13px;
+}
+
+#layerPopup .goodsItem .goodsInfo hgroup > * {
+  display: inline;
+}
+#layerPopup .goodsItem .goodsInfo span.price {
+  color: #375d5e;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  /* border: 1px solid #000; */
+  margin: 5px 0;
+  display: block;
+}
+
+span#closeIcon {
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  border: 6px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+span#closeIcon:hover {
+  color: #eee;
+  border: 6px solid #ddd;
+  border-radius: 50%;
+}
+/* 모달 레이어 팝업 끝 */
+
