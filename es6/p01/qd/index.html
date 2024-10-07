@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Drill 과일 포장</title>
+    <style>
+      div#wrap {
+        width: 300px;
+        padding: 10px;
+        margin: 0 auto;
+        border: 1px solid #000;
+      }
+      #inputArea {
+        padding: 5px;
+      }
+      #inputArea label {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      #inputArea input {
+        width: 30px;
+        padding: 4px 10px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      #selectArea {
+        padding: 5px;
+      }
+      #selectArea label:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      #btnArea {
+        padding: 5px;
+      }
+      #btnArea button {
+        width: 200px;
+        padding: 5px 0;
+        font-size: 16px;
+        border: 1px solid #aaa;
+        border-radius: 6px;
+      }
+
+      #resArea {
+        padding: 5px;
+        /* border: 1px solid #000; */
+      }
+      #resArea p {
+        height: 30px;
+        line-height: 30px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+
+      <div id="inputArea">
+        <label
+          ><span>개수 입력(20개 이상 입력)</span><input type="text" name=""
+        /></label>
+      </div>
+
+      <div id="selectArea">
+        <label>
+          <input type="radio" name="size" value="대과" />
+          <span>대과</span>
+        </label>
+        <label>
+          <input type="radio" name="size" value="중과"">
+          <span>중과</span>
+        </label>
+        <label>
+          <input type="radio" name="size" value="소과" />
+          <span>소과</span>
+        </label>
+      </div>
+
+      <div id="btnArea">
+        <button type="button">결과확인</button>
+      </div>
+
+      <div id="resArea">
+        <p></p>
+      </div>
+    </div>
+
+    <script>
+      const resDom = document.querySelector("#btnArea button");
+      resDom.addEventListener("click", function () {
+        let size = document.querySelector("#selectArea input[type=radio]:checked").value;
+        let cnt = document.querySelector("#inputArea input[type=text]").value;
+
+        let boxSize = size == "대과" ? 8 : size == "중과" ? 11 : 15;
+        let resText;
+        
+        if (cnt < 20) {
+          resText = "입력오류! 20개 이상 입력해주세요";
+        } else {
+          resText = `${size} ${Math.floor(cnt / boxSize)}상자를 포장하고 ${
+            cnt % boxSize
+          }개 남습니다.`;
+        }
+
+        document.querySelector("#resArea p").innerText = resText;
+      });
+    </script>
+  </body>
+</html>

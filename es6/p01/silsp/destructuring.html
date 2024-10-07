@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring(구조분해 할당)</title>
+</head>
+<body>
+  <h1>구조분해 할당</h1>
+  <p>배열, 리터럴객체(=커스텀객체), Map 객체를 편리하게 사용하기 위한 목적</p>
+
+  <script>
+    const person = {
+      firstName: `Jhon`,
+      lastName: `Wick`,
+      age: 35
+    }
+    let {firstName="Lee", age:a, gender="m"} = person;
+    console.log(`${firstName + " " + a + " " + gender}`);
+
+    console.log("---------");
+
+    const fruit = ["Apple", "Banana", "Mango", "Lemon"];
+    let {[1]:m, [2]:n} = fruit;
+    console.log(`${m + ", " + n}`);
+
+    let [,, ...r] = fruit;
+    console.log(r);
+
+  </script>
+</body>
+</html>

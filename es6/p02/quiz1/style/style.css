@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 300px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 30px auto;
+}
+
+div#wrap>p {
+  padding: 0 0 10px;
+}
+
+#wrap label {
+  display: block;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+#wrap label input {
+  width: 40px;
+  padding: 4px 6px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+
+#inputBtn {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+#inputBtn button {
+  padding: 0 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#resArea {
+  padding-top: 10px;
+}
+#resArea p {
+  height: 30px;
+  /* border: 1px solid #000; */
+  font-size: 18px;
+}
