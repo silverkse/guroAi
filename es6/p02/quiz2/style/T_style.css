@@ -32,6 +32,7 @@ fieldset label span {
 }
 
 #insArea label span {
+  width: 150px;
   font-size: 18px;
   font-weight: bold;
 }

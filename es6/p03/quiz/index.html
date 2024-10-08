@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timmer Quiz</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      div#wrap {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        margin: 40px auto;
+      }
+      div#numBox {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 24px;
+        margin: 30px auto 0;
+        border: 1px solid #000;
+      }
+      div#btnArea {
+        padding: 10px;
+        /* border: 1px solid #000; */
+        display: flex;
+        justify-content: space-around;
+      }
+      #btnArea button {
+        font-size: 17px;
+        padding: 6px 20px;
+        border-radius: 7px;
+        border: 1px solid #aaa;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="numBox">10</div>
+      <div id="btnArea">
+        <button type="button">Start</button>
+        <button type="button">Stop</button>
+      </div>
+    </div>
+
+    <script>
+      let interval;
+
+      const startBtn = document.querySelector("#btnArea button:first-child");
+      startBtn.addEventListener("click", () => {
+        interval = setInterval(fnTimer, 1000);
+      });
+
+      const stopBtn = document.querySelector("#btnArea button:last-child");
+      stopBtn.addEventListener("click", () => {
+        clearInterval(interval);
+      });
+
+      const fnTimer = (() => {
+        let time = 9;
+        const innerFunction = () => {
+          document.querySelector("#numBox").innerText = time--;
+          if (time < 0) {
+            time = 10;
+          }
+        };
+        return innerFunction;
+      })();
+    </script>
+  </body>
+</html>

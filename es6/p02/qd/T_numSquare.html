@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QD-숫자 사각형</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      div#wrap {
+        width: 300px;
+        height: 660px;
+        padding: 10px;
+        border: 2px solid #aaa;
+        border-radius: 6px;
+        margin: 30px auto;
+      }
+      main#main {
+        padding: 10px;
+        margin: 20px 0;
+      }
+      label {
+        margin: 10px 0;
+        display: block;
+      }
+      label#insArea > input[type="text"] {
+        width: 50px;
+        font-size: 20px;
+        padding: 4px 8px 5px;
+      }
+      label#insArea > button {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 3px 10px 5px;
+        cursor: pointer;
+      }
+      div#resArea {
+        font-size: 20px;
+        word-spacing: 5px;
+        padding: 20px 5px;
+        /* border: 1px solid #000; */
+        margin: 10px 0;
+      }
+      div#btnArea {
+        display: none;
+      }
+      button#resetBtn {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 6px 20px;
+        margin-top: 20px;
+        display: block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h3>[ 입력영역 ]</h3>
+      <main id="main">
+        <p>숫자입력(3~9 사이 값 입력)</p>
+        <label id="insArea">
+          <input type="text" id="insVal" autofocus />
+          <button type="button" id="resBtn">결과보기</button>
+        </label>
+      </main>
+      <h3>[ 출력영역 ]</h3>
+      <div id="resArea"></div>
+      <div id="btnArea">
+        <button id="resetBtn">재실행</button>
+      </div>
+    </div>
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script>
+      // 값을 지정한 실행 시작
+      const btnSbmDom = document.querySelector("#resBtn");
+      btnSbmDom.addEventListener("click", () => {
+        let insVal = document.querySelector("#insVal").value;
+        // 유효성 검사
+        let res = "";
+        if (insVal >= 3 && insVal <= 9) {
+          let cnt = 1;
+          for (let i = 1; i <= 100; i++) {
+            if (i % 10 == 0) {
+              res += cnt + `<br>`;
+            } else {
+              res += cnt + ` `;
+            }
+            cnt++;
+            if (cnt > insVal) cnt = 1;
+          }
+          res += `<br>Print OK!`;
+        } else {
+          res = `입력 오류!<br>
+          다시 입력해주세요.<br>
+          (3~9 사이 값 입력)`;
+        }
+
+        document.querySelector("#resArea").innerHTML = res;
+        document.querySelector("#btnArea").style.display = "block";
+      });
+
+      // 재실행 시작
+      const btnResetDom = document.querySelector("#resetBtn");
+      btnResetDom.addEventListener("click", () => {
+        // window.location.reload();
+        document.querySelector("#insVal").value = "";
+        document.querySelector("#resArea").innerText = "";
+        document.querySelector("#btnArea").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
