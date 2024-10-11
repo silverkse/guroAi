@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QD_성적처리</title>
+  <link rel="stylesheet" href="style/T_style.css">
+</head>
+<body>
+  <div id="wrap">
+    <h2>[수험생 성적처리]</h2>
+    <div id="insArea" class="dFlex">
+      <div id="scoreInsArea">
+        <label>
+          <span>점수1</span>
+          <input type="text" name="" autofocus>
+        </label>
+        <label>
+          <span>점수2</span>
+          <input type="text" name="">
+        </label>
+        <label>
+          <span>점수3</span>
+          <input type="text" name="">
+        </label>
+        <label>
+          <span>점수4</span>
+          <input type="text" name="">
+        </label>
+        <label>
+          <span>점수5</span>
+          <input type="text" name="">
+        </label>
+      </div>
+      <div id="btnArea">
+        <button type="button" id="resBtn">결과보기</button>
+      </div>
+    </div>
+
+    <div id="prnArea">
+      <p>
+        1. <span>응시자 평균 : </span>
+        <span id="avg"></span></p>
+      <p>
+        2. <span>성적 우수자 : </span>
+        <span id="max"></span></p>
+      <p>
+        3. <span>석차 : </span>
+        <span id="scoreOrder"></span></p>
+    </div>
+  </div>
+
+  <script src="script/T_script.js"></script>
+</body>
+</html>

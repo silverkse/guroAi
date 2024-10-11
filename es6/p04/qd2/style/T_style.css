@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 440px;
+  padding: 20px 20px 0 20px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+div.btnArea {
+  text-align: center;
+  margin: 10px 0;
+}
+div.btnArea button {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px;
+  cursor: pointer;
+}
+
+fieldset {
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+fieldset > legend {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0 7px;
+}
+fieldset > legend + p {
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  /* border: 1px solid #000; */
+  transform: translateY(10px);
+}
