@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 430px;
+  padding: 10px;
+  border: 2px solid #aaa;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 3px solid #aaa;
+  background-color: rgba(0, 136, 255, 0.3);
+}
+
+/* main#main 시작 */
+form > div {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+  margin: 10px 0;
+}
+
+form > div.item span.labelCap {
+  width: 100px;
+  font-weight: bold;
+  padding-left: 12px;
+  /* border: 1px solid #000; */
+  display: inline-block;
+  transform: translateY(5px);
+}
+
+form > div.item div > input[type=text] {
+  width: 180px;
+  font-size: 18px;
+  padding: 3px 8px;
+}
+form > div.item div input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  transform: translateY(5px);
+}
+form > div.item div input + span {
+  font-size: 13px;
+  
+}
+form > div.item div > input + span.hintMsg {
+  font-size: 13px;
+  /* border: 1px solid #000; */
+  margin-top: 10px;
+  display: block;
+}
+
+form > div.item div  input + span.confirmChkMsg {
+  margin-left: 10px;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+div#btnArea {
+  text-align: center;
+}
+#btnArea>button {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 8px 22px;
+  border: none;
+  border-radius: 6px;
+  margin: 2px;
+  background-color: #08f;
+  transform: translateY(-8px);
+}
+
+#btnArea>button:hover {
+  color: #eee;
+  cursor: pointer;
+  background-color: #07f;
+}
+/* main#main 끝 */

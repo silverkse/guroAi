@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise(프라미스)</title>
+  </head>
+  <body>
+    <h1>프라미스 기초사용법</h1>
+
+    <script>
+      // let objProm = new Promise(function (resolve, reject) {
+      //   // 생성코드 시작
+      //   let x = 0;
+
+      //   if (x == 0) {
+      //     resolve("OK"); // 정상 실행될 때
+      //   } else {
+      //     reject("Error"); // 에러 발생할 때
+      //   }
+      // });
+
+      // // 소비코드
+      // objProm.then(
+      //   function (v) {
+      //     console.log(`정상실행 : ${v}`);
+      //   },
+      //   function (e) {
+      //     console.log(`에러발생 : ${e}`);
+      //   }
+      // );
+
+
+
+      // // 에러가 없는 경우의 생성코드
+      // let objProm = new Promise(function (resolve) {
+
+      //   resolve("OK222"); // 정상 실행
+      // });
+
+      // // 에러가 없는 경우의 소비코드
+      // objProm.then(function (v) {
+      //   console.log(`정상실행 : ${v}`);
+      // });
+
+
+
+      // // 함수를 사용한 Promise의 생성코드
+      // function 함수명(resolve) {
+      //   // 생성코드
+
+      //   return Promise.resolve("OK333");
+      // };
+
+      // // 함수를 사용한 Promise의 소비코드
+      // 함수명().then(
+      //   function(v){ console.log(`정상실행 : ${v}`)}
+      // );
+
+
+
+      // // async를 사용한 Promise의 생성코드
+      // async function 함수명(resolve) {
+      //   return "OK444";
+      // };
+
+      // // async를 사용한 Promise의 소비코드
+      // 함수명().then(
+      //   function(v){ console.log(`정상실행 : ${v}`)}
+      // );
+
+
+
+      // // async와 await의 활용(생성코드와 소비코드를 하나의 코드로 만드는 경우)
+      // async function 함수명(resolve) {
+
+      //   // 정상 실행될 때
+      //   let objProm = new Promise(function(resolve){
+      //     resolve("OK555");
+      //   });
+
+      //   console.log("정상실행 : " + await objProm);
+      // };
+
+      함수명();
+    </script>
+  </body>
+</html>

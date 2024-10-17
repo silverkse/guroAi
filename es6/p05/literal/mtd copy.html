@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>리터럴 객체 메서드</title>
+</head>
+<body>
+  <div id="wrap">
+    <h1>리터럴 객체 메서드</h1>
+    <p id="res"></p>
+  </div>
+  <script>
+    // entries() 엔트리즈 => 모든 항복( = 모든 속성)
+    const sample = {
+      goods: '의자',
+      count: 5
+    };
+
+    console.log("keys 메서드 : " + Object.keys(sample).toString());
+    console.log("values 메서드 : " + Object.values(sample).toString());
+  </script>
+</body>
+</html>

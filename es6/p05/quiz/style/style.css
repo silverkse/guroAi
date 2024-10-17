@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 340px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 { 
+  text-indent: 20px;
+  margin:10px 0;
+  font-size: 24px;
+}
+
+main#main {
+  gap: 20px;
+}
+div.randomArea {
+  /* flex: 1; */
+  /* border: 1px solid #000; */
+}
+div.randomArea input {
+  width: 50px;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 10px;
+
+  display: flex;
+}
+div.randomArea button {
+  width: 100%;
+  font-size: 18px;
+  padding: 2px 8px;
+  margin-top: 10px;
+}
+
+div#setBtnArea {
+  flex: 1;
+  /* border: 1px solid #000; */
+}
+div#setBtnArea button {
+  width: 100%;
+  font-size: 18px;
+  padding: 3px 0;
+  margin-bottom: 10px;
+}

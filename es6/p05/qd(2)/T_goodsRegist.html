@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QD_상품등록</title>
+    <link rel="stylesheet" href="style/T_style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>상품등록</h1>
+
+      <main id="main">
+        <form>
+          <div class="item dFlex">
+            <label for="goodsCode">
+              <span class="labelCap">상품코드</span>
+            </label>
+              <div>
+                <input id="goodsCode" type="text" />
+                <span class="hintMsg">영어/숫자 각 1개이상, #, _, - 만 허용(글자수 5~8)</span>
+              </div>
+          </div>
+          <div class="item dFlex">
+            <label for="goodsName">
+              <span class="labelCap">상품명</span>
+            </label>
+              <div>
+                <input id="goodsName" type="text" />
+                <span class="hintMsg">한글, 영어, 숫자허용. 기호는 #만 허용함(2글자 이상)</span>
+              </div>
+          </div>
+          <div class="item dFlex">
+            <label for="managerName">
+              <span class="labelCap">담당자 이름</span>
+            </label>
+              <div>
+                <input id="managerName" type="text" />
+                <span class="hintMsg">한글만 2~5글자</span>
+              </div>
+          </div>
+          <div class="item dFlex">
+            <label for="confirmChk">
+              <span class="labelCap">검수확인</span>
+            </label>
+              <div>
+                <label>
+                  <input id="confirmChk" type="checkbox" />
+                  <span class="confirmChkMsg">담당자 상품검수확인</span>
+                </label>
+              </div>
+          </div>
+          
+          <div id="btnArea">
+            <button type="button" id="sbmBtn">등록하기</button>
+            <button type="reset">다시쓰기</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="script/T_script.js"></script>
+  </body>
+</html>

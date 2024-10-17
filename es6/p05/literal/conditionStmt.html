@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리터럴 객체 for-in 제어문</title>
+  </head>
+  <body>
+    <h1>리터럴 객체 for-in 제어문</h1>
+    <script>
+      // entries() 엔트리즈 => 모든 항복( = 모든 속성)
+      const sample = {
+        goods: "의자",
+        count: 5,
+      };
+
+      let x = Object.entries(sample);
+      x.forEach((prop, i) => {
+        console.log(prop.toString());
+      });
+
+      // let x = Object.entries(sample);
+      // for (const [key, value] of x) {
+      //   console.log("key : " + key);
+      //   console.log("value : " + value);
+      // }
+    </script>
+  </body>
+</html>

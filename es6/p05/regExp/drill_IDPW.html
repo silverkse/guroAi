@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정규표현식 적용</title>
+  </head>
+  <body>
+    <h1>정규표현식 적용</h1>
+
+    <script>
+      let text = "A$@7E"; // 아이디 점검용
+      let pattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$_-])[A-Z\d@$_-]{5,}$/;
+      let result = pattern.test(text);
+      console.log(result);
+      let errMsg =
+        "아이디가 잘못되었습니다.\n" +
+        "(5글자 이상, 영대문자 1글자 이상, \n" +
+        "숫자 1글자 이상, 기호 @, $, -, _ 4개 중 가능)";
+      if (!result) {
+        alert(errMsg);
+      } else {
+        console.log("OK");
+      }
+    </script>
+  </body>
+</html>

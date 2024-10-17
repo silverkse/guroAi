@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizDrill_상품재고등록</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="registArea">
+        <h1>상품재고등록</h1>
+        <hr />
+        <div id="inputArea" class="dFlex">
+          <div id="itemInputArea">
+            <label>
+              <p>상품명</p>
+              <input type="text" />
+            </label>
+          </div>
+          <div id="cntInputArea">
+            <label>
+              <p>수량</p>
+              <input type="number" />
+            </label>
+          </div>
+        </div>
+        <div id="btnArea">
+          <button type="button">등록하기</button>
+        </div>
+      </div>
+
+      <div id="listArea">
+        <h1>재고목록</h1>
+        <hr />
+        <table id="listTbl">
+          <tbody>
+            <tr>
+              <th>No</th>
+              <th>상품명</th>
+              <th>수량</th>
+              <th>삭제</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
