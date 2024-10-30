@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 340px;
+  padding: 10px;
+  border: 4px solid #fafafa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	padding: 10px;
+	border: 1px solid #eee;
+}
+input {
+	width: 100%;
+	font-size: 18px;
+	padding: 6px 12px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+button {
+	width: 100%;
+	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 8px;
+	border: 1px solid #08f;
+	background-color: #08f;
+	cursor: pointer;
+}
+
+
+div#wrap.welcome {
+	margin-top: 50px;
+	text-align: center;
+}
+div#wrap.welcome button {
+	padding: 2px 4px;
+}

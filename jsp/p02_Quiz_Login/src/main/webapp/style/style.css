@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 360px;
+  padding: 10px;
+  /*
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  */
+  margin: 10px auto;
+}
+
+h1 {
+	text-align: center;
+	margin: 15px;
+}
+
+div#loginArea {
+	padding: 15px;
+	margin: 0 auto;
+	border: 2px solid #ddd;
+}
+div#loginArea > * {
+	width: 100%;
+	display: block;
+	font-size: 16px;
+	padding: 10px;
+}
+div#loginArea > input[type=password] {
+	margin: 5px 0 15px;
+}
+div#loginArea > button {
+	color: #fff;
+	background-color: #08f;
+	border: none;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+
+div#wrap.welcome {
+	margin-top: 50px;
+	text-align: center;
+}
+div#wrap.welcome button {
+	padding: 2px 4px;
+}
