@@ -29,7 +29,8 @@ img {
 }
 ul {
   /*불릿기호표시하지않음*/
-  list-style: none;
+  list-style: disc;
+  list-style-position: inside;
 }
 .dFlex {
   /*HTML요소의속성으로플렉스레이아웃적용*/
