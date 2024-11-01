@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 400px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+h1, h2 {
+	text-align: center;
+}
+form {
+	text-align: center;
+	padding: 0 20px;
+}
+form > * {
+	display: block;
+}
+form > label {
+	display: inline-block;
+	margin: 10px 0 20px;
+}
+form label > span {
+	font-size: 18px;
+}
+form label > input {
+	font-size: 15px;
+	text-align: center;
+	margin-left: 10px;
+}
+form > button {
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 4px;
+	margin: 0 auto 10px;
+	cursor: pointer;
+}
+
+
+/* comingSoon style 시작 */
+div#wrap.comingSoon {
+	width: 380px;
+}
+
+div#dateArea p {
+	font-size: 18px;
+	text-align: center;
+}
+div#dateArea > div {
+	margin-bottom: 4px;
+}
+#dateArea p > span {
+	width: 60px;
+	display: inline-block;
+}
+#dateArea p > input {
+	font-size: 16px;
+	text-align: right;
+	padding: 0 4px;
+	transform: translateY(-1px);
+}
+#dateArea p > input:nth-child(2) {
+	width: 55px;
+}
+#dateArea p > input:nth-child(3), #dateArea p >input:last-child {
+	width: 35px;
+}
+
+div#resArea h2 {
+	font-size: 24px;
+	color: #08f;
+}

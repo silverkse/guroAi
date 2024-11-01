@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 280px;
+  padding: 15px;
+  border: 2px solid #aaa;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+input[type=text] {
+	width: 60px;
+	font-size: 18px;
+	padding: 6px 10px 7px;
+	margin-right: 10px;
+}
+
+button {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 6px 20px;
+	cursor: pointer;
+}
+
+form {
+	margin-bottom: 25px;
+}
+
+div#resArea {
+	width: 100%;
+	height: 360px;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 0 20px;
+/* 	border: 1px solid #000; */
+	margin: 15px 0 0;
+}
+
+button#resetBtn {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: inline-block;
+}
