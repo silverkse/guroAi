@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 440px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+div#gnbWrap {
+	margin: 10px 0;
+	justify-content: center;
+	gap: 5px;
+	align-items: center;
+}
+div.menuBar {
+	font-size: 12px;
+	transform: translateY(-2px);
+}
+div.menu {
+	color: #888;
+	font-size: 14px;
+	padding: 4px 8px;
+}
+div.menu:hover {
+	background-color: #ddd;
+	font-weight: bold;
+	cursor: pointer;
+}
+div#gnbWrap > div.homeMenu {
+	color: #000;
+	font-weight: bold;
+}
+
+div#wrap p {
+	font-size: 24px;
+	text-align: center;
+	margin: 15px 0 10px;
+}
+
+/* login.jsp 스타일 시작 */
+div#wrap.login {
+	width: 340px;
+}
+form#loginFrm {
+	padding: 10px;
+}
+form#loginFrm > * {
+	display: block;
+}
+form#loginFrm > input {
+	width: 100%;
+	font-size: 18px;
+	padding: 4px 8px;
+	margin: 5px auto;
+}
+form#loginFrm > button {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #08f;
+	width: 100%;
+	padding: 4px;
+	border: 1px solid #08f;
+	border-radius: 4px;
+	margin: 10px 0;
+	cursor: pointer;
+}
