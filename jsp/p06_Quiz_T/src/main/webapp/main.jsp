@@ -13,20 +13,26 @@
 <body>
 <%
 String sid = (String) session.getAttribute("sid");
+String loginMsg = "";
 
 %>
 	<div id="wrap">
-		<%="sid : " + sid %>
+<%-- 		<%="sid : " + sid %> --%>
 		<h1>GNB 메뉴 Login 세션처리</h1>
 		<nav id="gnb">
 			<ul id="mainMenu" class="dFlex">
-		<% if(sid == null) { %> 	<!-- 로그아웃 상태 -->
+		<% if(sid == null) { 
+			loginMsg = "로그아웃 상태";
+		%>
+				<!-- 로그아웃 상태 -->
 				<li class="mainLi selected"><a href="#">HOME</a></li>
 				<li class="mainLi">|</li>
 				<li class="mainLi"><a href="#">회원가입</a></li>
 				<li class="mainLi">|</li>
 				<li class="mainLi"><a href="member/login.jsp">로그인</a></li>
-		<% } else { %> 				<!-- 로그인 상태 -->
+		<% } else {
+			loginMsg = sid + "님 로그인 상태";	
+		%> 				<!-- 로그인 상태 -->
 				<li class="mainLi selected"><a href="#">HOME</a></li>
 				<li class="mainLi">|</li>
 				<li class="mainLi"><a href="#">마이페이지</a></li>
@@ -39,7 +45,7 @@ String sid = (String) session.getAttribute("sid");
 		<main id="main">
 			<p>
 				메인페이지
-				(<span id="res">로그아웃 상태</span>)
+				(<span id="res"><%=loginMsg %></span>)
 			</p>
 		</main>
 		

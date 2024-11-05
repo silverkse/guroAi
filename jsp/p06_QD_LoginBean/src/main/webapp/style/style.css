@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 440px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+/* login.jsp 스타일 시작 */
+div#wrap.login {
+	width: 340px;
+}
+div#wrap.login hr {
+	margin: 10px 0 5px;
+}
+form > * {
+	display: block;
+}
+form > input {
+	width: 100%;
+	font-size: 18px;
+	padding: 4px 8px;
+	margin: 5px auto;
+}
+button {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #08f;
+	width: 100%;
+	padding: 4px;
+	border: 1px solid #08f;
+	border-radius: 4px;
+	margin: 10px 0;
+	cursor: pointer;
+}
+button:hover {
+	border: 1px solid #06d;
+	background-color: #06d;
+}
