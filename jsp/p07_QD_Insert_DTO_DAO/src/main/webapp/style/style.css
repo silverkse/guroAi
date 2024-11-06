@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 340px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+div#wrap > h1 {
+	padding-left: 20px;
+}
+
+table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin: 10px auto;
+}
+table tr td {
+	border: 1px solid #ccc;	
+}
+table tr:not(last-child) td:first-child {
+	font-weight: bold;
+	width: 100px;
+	padding: 8px;
+	text-align: right;
+}
+table tr:not(last-child) td:last-child {
+	width: 200px;
+	padding: 8px;
+}
+td > input {
+	font-size: 16px;
+	width: 160px;
+	padding: 3px 8px;
+}
+tr:nth-child(4) td:last-child input {
+	width: 120px;
+}
+
+tr:last-child td div {
+	justify-content: center;
+	gap: 10px;
+}
+tr:last-child td div button {
+	font-weight: bold;
+	font-size: 17px;
+	width: 90px;
+	padding: 4px;
+	cursor: pointer;
+}
+
+div#wrap.insert {
+	text-align: center;
+}
+div#wrap.insert p {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+}
+div#wrap.insert button {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 3px 8px;
+	cursor: pointer;
+	margin: 30px 0 15px;
+}
