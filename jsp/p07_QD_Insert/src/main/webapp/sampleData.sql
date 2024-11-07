@@ -11,4 +11,6 @@ constraint primary key(goodsCode)
 );
 desc goodsList;
 
+drop table goodsList;
+
 select * from goodsList order by num desc;
