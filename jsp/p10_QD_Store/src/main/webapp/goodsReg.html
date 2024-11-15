@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/style/style.css?v">
+</head>
+<body>
+	<div id="wrap">
+		<h1>상품등록</h1>
+		<hr>
+		<form action="/uploadProc.jsp" method="post" enctype="multipart/form-data">
+			
+			<label>
+				<span>상품이미지</span>
+				<input type="file" name="fileName">
+			</label>
+			<label>
+				<span>상품명</span>
+				<input type="text" name="goodsName" required>
+			</label>
+			<label>
+				<span>가격</span>
+				<input type="text" name="goodsPrice" required>
+			</label>
+			<label>
+				<span>상품설명</span>
+				<textarea name="content"></textarea>
+			</label>
+			
+			<hr>
+			<div id="btnArea">
+				<button>등록</button>
+				<button type="reset">초기화</button>
+				<button type="button">목록</button>
+			</div>
+			
+		</form>
+		
+	</div>
+	<!-- div#wrap -->
+	<script src="/script/jquery-3.7.1.min.js"></script>
+	<script src="/script/script.js"></script>
+</body>
+</html>
