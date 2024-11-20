@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/style/style.css?v">
+</head>
+<body>
+	<div id="wrap">
+		<h1>JSTL c:choose 조건식</h1>
+	
+		숫자 입력 <input type="text" size="5">
+		<br>
+		<button>전송</button>
+					
+	</div>
+	<!-- div#wrap -->
+	<script>
+		const btnDom = document.querySelector("button");
+		btnDom.addEventListener("click", () => {
+			let numData = document.querySelector("input[type=text]").value;
+// 			location.href="/jstl_Choose/receive.jsp?전송되는인수명=값"
+			location.href="/jstl_Choose/receive.jsp?numData="+numData;
+		});
+	</script>
+</body>
+</html>

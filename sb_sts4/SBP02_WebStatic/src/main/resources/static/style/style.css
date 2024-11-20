@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+div#wrap {
+	width: 300px;
+	border: 3px solid #08f;
+	padding: 20px;
+	margin: 30px auto;
+}
+
+h1 {
+	color: #f80;
+}
+
+#wrap span {
+	user-select: none;
+}
+#wrap span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#wrap img {
+	width: 100%;
+}
