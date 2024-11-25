@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 340px;
+  padding: 10px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+	margin: 15px 0;
+}
+
+div#insArea div.inputBox:first-child {
+	margin-bottom: 30px;
+}
+div#insArea div.inputBox p {
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+div#insArea div.inputBox input {
+	font-size: 18px;
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;	
+}
+
+div#btnArea button {
+	color: #fff;
+	font-size: 16px;
+	width: 100%;
+	padding: 10px;
+	margin: 20px 0 10px;
+	border: none;
+	border-radius: 20px;
+	background-color: #4fad75;
+}
+div#btnArea button:hover {
+	cursor: pointer;
+	opacity: 0.8;	
+}
+
+
+/* loginProc.jsp 시작 */
+div#wrap.loginProc ul {
+	padding: 10px 0;
+}
+div#wrap.loginProc ul li {
+	font-size: 18px;
+	margin: 20px 0;
+}
+/* loginProc.jsp 끝 */
+
+/* join.jsp 시작 */
+div#insArea.join label {
+	padding-top: 5px;
+	display: block;
+}
+div#insArea.join label input[type=checkbox] {
+	display: none;
+}
+div#insArea.join label .custom-checkbox {
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    transform: translateY(3px);
+ 
+}
+div#insArea.join label input[type=checkbox]:checked + .custom-checkbox{
+	background-color: #4fad75;
+}
+div#insArea.join label input[type=checkbox]:checked + .custom-checkbox::after {
+/* 	content: '✔'; 체크 표시 문자 */
+/*     font-size: 14px; */
+/*     color: #fff; 체크 표시 색상 */
+/*     position: absolute; */
+/*     top: 50%; */
+/*     left: 50%; */
+/*     transform: translate(-50%, -50%); */
+    
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 6px;
+    border: solid #fff; /* 체크 표시 색상 */
+    border-width: 0 0 2px 2px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* join.jsp 끝 */
