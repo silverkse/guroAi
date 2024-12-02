@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qd04.dao.ResumeDao">
+	
+	<!-- 지원 등록 -->
+	<insert id="mtdRegProc" parameterType="java.util.Map">
+		insert into resume (userName, phone, field, motive)
+		values
+		(#{userName}, #{phone}, #{field}, #{motive})
+	</insert>
+	
+	<!-- 지원 목록 출력 -->
+	<select id="mtdList" resultType="com.qd04.dto.ResumeDto">
+		select * from resume order by num desc
+	</select>
+	
+	<!-- 지원 내역 상세 -->
+	<select id="mtdDescView" resultType="com.qd04.dto.ResumeDto">
+		select * from resume where num = #{num}
+	</select>
+	
+	<!-- 지원 내역 수정 -->
+	<update id="mtdModiProc" parameterType="java.util.Map">
+		update resume set phone = #{phone}, field = #{field}, motive = #{motive} where num = #{num}
+	</update>
+	
+</mapper>

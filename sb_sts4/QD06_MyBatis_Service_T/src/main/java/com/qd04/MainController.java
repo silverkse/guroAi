@@ -1,0 +1,126 @@
+package com.qd04;
+
+import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.qd04.dao.ApplyDao;
+import com.qd04.dto.ApplyDto;
+import com.qd04.svc.ApplyService;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+@Controller
+public class MainController {
+	
+	@Autowired
+	private ApplyService applyService;
+	
+	@RequestMapping("/")
+	@ResponseBody
+	public String root() throws Exception {
+		return "개발자 지원서 작업";
+	}
+	
+	// 지원서 입력양식
+	@RequestMapping("/applyForm")
+	public String applyForm() {
+		return "applyForm";
+	}
+	
+	// 지원서 DB 입력처리
+	@RequestMapping("/applyProc")
+	public String applyProc(
+			@RequestParam(value="userName") String userName,
+			@RequestParam(value="userPhone") String userPhone,
+			@RequestParam(value="applyPart") String applyPart,
+			@RequestParam(value="applyMotive") String applyMotive,
+			RedirectAttributes redAttr
+			) {
+		
+		Map<String, String> map = new HashMap<>();
+		map.put("userName", userName);
+		map.put("userPhone", userPhone);
+		map.put("applyPart", applyPart);
+		map.put("applyMotive", applyMotive);
+		
+		applyService.mtdRegProc(map);
+		
+		redAttr.addAttribute("userName", userName);
+		redAttr.addAttribute("userPhone", userPhone);
+		redAttr.addAttribute("applyPart", applyPart);
+		redAttr.addAttribute("applyMotive", applyMotive);
+		
+		return "redirect:/list";
+	}
+	
+	// 목록출력
+	@RequestMapping("/list")
+	public String list(Model model) {
+		model.addAttribute("mtdList", applyService.mtdList());
+		return "list";
+	}
+	
+	// 리스트 내용 상세보기(= 뷰 보기)
+	@RequestMapping("/view")
+	public String result(
+			@RequestParam(value="numParam") String numParam,
+			Model model
+			) {
+		
+		ApplyDto applyDto = applyService.mtdView(numParam);
+		
+		model.addAttribute("applyDto", applyDto);
+		
+		return "view";
+	}
+	
+	
+	// 수정 입력 폼 시작
+	@GetMapping("/modForm")
+	public String mtdMod(HttpServletRequest req, Model model) {
+		
+		try {
+			req.setCharacterEncoding("UTF-8");
+			String num = req.getParameter("numParam");
+			ApplyDto applyDto = applyService.mtdView(num);
+			model.addAttribute("applyDto", applyDto);
+		} catch(UnsupportedEncodingException e) {
+			System.out.println("/modForm 중 오류 : " + e.getMessage());
+		}
+		return "modForm";
+	}
+	
+	// 수정 실행 시작
+	@RequestMapping("/modProc")
+	public String mtdModProc(
+			@RequestParam(value="numParam") String numParam,
+			@RequestParam(value="userPhone") String userPhone,
+			@RequestParam(value="applyPart") String applyPart,
+			@RequestParam(value="applyMotive") String applyMotive,
+			RedirectAttributes redAttr
+			) {
+		
+		Map<String, String> map = new HashMap<>();
+		map.put("numParam", numParam);
+		map.put("userPhone", userPhone);
+		map.put("applyPart", applyPart);
+		map.put("applyMotive", applyMotive);
+		
+		applyService.mtdModProc(map);
+		
+		redAttr.addAttribute("numParam", numParam);
+		
+		return "redirect:/view";
+	}
+	
+}
