@@ -1,8 +1,12 @@
 package com.drill.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort.Direction;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -35,6 +39,7 @@ public class PostController {
 			HttpSession session
 			){
 		User sid = (User)session.getAttribute("sid");
+//		System.out.println("sid: " + sid);
 		post.setUser(sid);
 		postService.write(post);
 		
@@ -43,6 +48,22 @@ public class PostController {
 				"등록완료!"
 				);
 	}
+	
+	// 글목록
+	@GetMapping("/list")
+	public String postList(
+			Model model,
+			@PageableDefault(
+					size=4,						// 한 페이지에 보여줄 수
+					sort="num",					// 정렬할 필드
+					direction=Direction.DESC	// 오름차순, 내림차순
+					) Pageable pageable
+			) {
+		model.addAttribute("postList", postService.getList(pageable));
+		return "post/list";
+	}
+	
+	
 	
 	
 }

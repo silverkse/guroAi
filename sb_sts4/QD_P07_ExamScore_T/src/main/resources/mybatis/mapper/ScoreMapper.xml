@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qd07.dao.ScoreDao">
+
+	<!-- 성적입력 -->
+	<insert id="scoreIns" parameterType="java.util.Map">
+		
+		insert into scoreList
+		(code, userName, kor, history, phone) values
+		(#{code}, #{userName}, #{kor}, #{history}, #{phone})
+		
+	</insert>
+	
+	<!-- 성적 리스트 -->
+	<select id="scoreList" resultType="com.qd07.dto.ScoreDto">
+	
+		select * from scoreList order by num desc
+		
+	</select>
+	
+	<!-- 성적 상세보기 -->
+	<select id="scoreDetail" resultType="com.qd07.dto.ScoreDto">
+		select * from scoreList where num = #{param1}
+	</select>
+	
+	<!-- 수험결과 수정하기 실행 -->
+	<update id="scoreModProc" parameterType="java.util.Map">
+		update scoreList set
+		kor = #{kor},
+		history = #{history},
+		phone = #{phone}
+		where num = #{num}
+	</update>
+	
+	<!-- 삭제하기 -->
+	<delete id="scoreDelProc">
+		delete from scoreList where num = #{param1}
+	</delete>
+	
+	<!-- 평균 석차 보기 -->
+	<select id="avgList" resultType="com.qd07.dto.ScoreDto">
+		select code, userName, kor, history, (kor + history) / 2 as avg
+		from scoreList
+		order by avg desc 
+	</select>
+	
+</mapper>

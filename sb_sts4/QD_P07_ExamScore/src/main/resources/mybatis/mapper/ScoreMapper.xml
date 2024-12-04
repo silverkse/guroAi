@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qd07.dao.ScoreDao">
+	
+	<!-- 성적 리스트 조회 -->
+	<select id="mtdList" resultType="com.qd07.dto.ScoreDto">
+		select * from scoreList order by num desc
+	</select>
+	
+	<!-- 수험 결과 입력 -->
+	<insert id="mtdInsert" parameterType="com.qd07.dto.ScoreDto">
+		insert into scoreList (regNum, regName, korScore, hstoryScore, regPhone, avgScore)
+		values (#{regNum }, #{regName }, #{korScore }, #{hstoryScore }, #{regPhone }, #{avgScore })
+	</insert>
+	
+	<!-- 평균 석차 리스트 조회 -->
+	<select id="mtdAvgList" resultType="com.qd07.dto.ScoreDto">
+		select * from scoreList order by avgScore desc
+	</select>
+	
+	<!-- 수험 정보 상세보기 -->
+	<select id="mtdDesc" resultType="com.qd07.dto.ScoreDto">
+		select * from scoreList where regNum = #{regNum}
+	</select>
+	
+	<!-- 수험 정보 수정하기 -->
+	<update id="mtdModify" parameterType="com.qd07.dto.ScoreDto">
+		update scoreList set regName=#{regName}, korScore=#{korScore}, hstoryScore=#{hstoryScore}, regPhone=#{regPhone}, avgScore=#{avgScore} where regNum=#{regNum}
+	</update>
+	
+	<!-- 수험 정보 삭제하기 -->
+	<delete id="mtdDelete">
+		delete from scoreList where regNum = #{param1}
+	</delete>
+	
+</mapper>

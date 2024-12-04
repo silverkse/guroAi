@@ -71,6 +71,8 @@ public class MainController {
 	public ResUserDto<?> postLogin(@RequestBody User user, HttpSession session) {
 		
 		User findUser = userService.getUser(user.getUserid());
+		System.out.println("user.getUserid() : " + user.getUserid());
+		System.out.println("userService.getUser(user.getUserid()) : " + userService.getUser(user.getUserid()));
 		
 		if(findUser.getUserid() == null) {
 			
@@ -85,6 +87,8 @@ public class MainController {
 				
 				// 로그인 정상 처리
 				session.setAttribute("sid", findUser);
+//				session.setAttribute("sid", findUser.getUserid());
+//				System.out.println("findUser.getUserid : " + findUser.getUserid());
 				session.setMaxInactiveInterval(5 * 60);
 				return new ResUserDto<>(
 						HttpStatus.OK.value(),

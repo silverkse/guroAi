@@ -14,6 +14,7 @@ constraint primary key(num)				,
 constraint unique(userid)
 );
 desc user;
+desc post;
 
 select num, userid, password, email, regTM, role from user order by num desc;
 
