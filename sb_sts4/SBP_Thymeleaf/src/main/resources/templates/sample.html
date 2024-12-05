@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/style/style.css?v">
+</head>
+<body>
+	<div id="wrap">
+		
+		<a href="https://www.naver.com">네이버로 이동</a>			<!-- 기존 a태그 사용법 -->
+		<a th:href="@{https://www.nate.com}">네이트로 이동</a>		<!-- thymeleaf에서의 a태그 사용법 -->
+		
+<!-- 		<a th:href="@{/패턴(인수명1=${값1}, 인수명2=${값2})}">메인으로 이동</a> -->
+		<a th:href="@{/(num=${5}, txt=${'블루베리'})}">메인으로 이동</a>
+	
+		
+<!-- 		<태그 th:each="순환용변수 : ${키}"> -->
+<!-- 			<p th:text="${순환용변수}"></p> -->
+<!-- 		</태그> -->
+		
+		<p th:text="|전체 개수 : ${listData.size}|"></p>
+		
+		<p>index : value</p>
+		<th:block th:each="list : ${listData}">
+			<p th:text="|${listStat.index} : ${list}|"></p>
+		</th:block>
+		
+		
+	</div>
+	<!-- div#wrap -->
+	<script src="/script/jquery-3.7.1.min.js"></script>
+	<script src="/script/script.js"></script>
+</body>
+</html>
