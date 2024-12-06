@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.sample {
+  color: #f80;
+}
+
+.h1Area {
+  width: 300px;
+  color: #08f;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+  margin: 20px auto;
+}

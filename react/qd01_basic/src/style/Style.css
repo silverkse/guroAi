@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#elixirs {
+  width: 200px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #007e7e;
+  margin-left: 20px;
+  text-align: center;
+  background-image: url(../images/cocktail.gif);
+  background-repeat: repeat-x;
+  background-size: 35%;
+}
+
+div#elixirs > h2 {
+  width: 90px;
+  font-size: 18px;
+  margin: 10px auto 0;
+}
+p {
+  font-size: 12px;
+  line-height: 1em;
+}
+
+div.drinkArea {
+  margin: 20px 0;
+}
+div.drinkArea h2 {
+  font-size: 16px;
+  color: rgba(160, 40, 100);
+  margin: 12px 0;
+}

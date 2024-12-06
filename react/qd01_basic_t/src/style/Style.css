@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+div#elixirs {
+  width: 200px;
+  text-align: center;
+  line-height: 1em;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #007e7e;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  /* background-image: url(../images/cocktail.gif); */
+  background-repeat: repeat-x;
+}
+
+div#elixirs h1 {
+  font-size: 22px;
+  text-align: center;
+  line-height: 20px;
+}
+
+div#elixirs div.drinkItem {
+  text-align: center;
+  margin-bottom: 20px;
+}
+div#elixirs div.drinkItem h3 {
+  color: #b95187;
+  margin: 15px;
+}
+div#elixirs div.drinkItem h3+p {
+  font-size: 14px;
+}
+
+div#elixirs div#etc {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
