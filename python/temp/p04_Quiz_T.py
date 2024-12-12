@@ -1,0 +1,12 @@
+# dataKey = input("상품명을 입력하세요: ")
+# # print(f"dataKey : {dataKey}")
+# price = input("가격을 입력하세요: ")
+# cnt = input("갯수를 입력하세요: ")
+# dataTuple = tuple((price, cnt))
+# # print(f"dataTuple : {dataTuple}")
+# # print(f"dataKey : {dataKey}\nprice: {price}\ncnt: {cnt}")
+
+# dataDict = dict({dataKey : dataTuple})
+# print(f"{dataDict}")
+res = type(2.4)
+print(f"{res}")
